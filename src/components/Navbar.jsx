@@ -50,7 +50,7 @@ function Navbar() {
           className="ml-4 lg:ml-0 relative"
           style={{ transform: `translateY(${translateY}px)` }}
         >
-          <img src={logo} alt="Logo" className="h-16 w-14" />
+          <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
         </div>
 
         {/* Right-side links for large screens */}
