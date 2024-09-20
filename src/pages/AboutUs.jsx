@@ -1,7 +1,7 @@
 import website_texture from "../assets/website_texture.png";
 
 import SocialMedia from "../components/socialMedia";
-import About from "../components/aboutUs";
+import About from "../components/aboutus";
 import Gallery from "../components/gallery";
 
 export default function AboutUs() {
