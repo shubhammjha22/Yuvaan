@@ -81,7 +81,7 @@ function HomePage() {
         </section>
 
         {/* THeme */}
-        <section className=" relative">
+        <section className=" -mt-[13rem]  sm:mt-0 relative">
           <Theme />
         </section>
 

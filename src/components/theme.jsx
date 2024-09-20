@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
 import realms from "../assets/realms.png";
 
 export default function Theme() {
+  const [logoPosition, setLogoPosition] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLogoPosition((prevPosition) => (prevPosition + 0.04) % (2 * Math.PI));
+    }, 10); // 60 FPS for smoother animation
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const translateY = Math.sin(logoPosition) * 4;
+
   return (
     <>
       {/* Theme */}
@@ -9,6 +22,7 @@ export default function Theme() {
           <img
             src={realms}
             className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
+            style={{ transform: `translateY(${translateY}px)` }}
             alt=""
           />
         </div>

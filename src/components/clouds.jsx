@@ -33,35 +33,43 @@ export default function Clouds() {
         <div className="sm:hidden block">
           <div className=" h-[12rem] -mt-[11rem]  ">
             {/* middle cloud */}
-            <img src={clouds} className="absolute -left-[40%] w-full" alt="" />
-            <img src={clouds} className="absolute -right-[40%] w-full" alt="" />
+            {/* <img
+              src={clouds}
+              className="absolute -left-[15%] top-4 w-full"
+              alt=""
+            />
+            <img
+              src={clouds}
+              className="absolute top-4 -right-[15%] w-full"
+              alt=""
+            /> */}
 
             {/* top */}
             <img
               src={clouds}
-              className="absolute -left-[40%] -top-14 w-full"
+              className="absolute -left-[20%] -top-14 w-full"
               alt=""
             />
             <img
               src={clouds}
-              className="absolute -right-[40%] -top-14 w-full"
+              className="absolute -right-[20%] -top-14 w-full"
               alt=""
             />
             {/* Center cloud */}
-            <img src={clouds} className="absolute  w-full" alt="" />
+            {/* <img src={clouds} className="absolute  w-full" alt="" /> */}
 
-            <img src={clouds} className="absolute top-14  w-full" alt="" />
-            <img src={clouds} className="absolute -top-14  w-full" alt="" />
+            {/* <img src={clouds} className="absolute top-24  w-full" alt="" /> */}
+            {/* <img src={clouds} className="absolute -top-14  w-full" alt="" /> */}
 
             {/* below middle ignore comments cloud */}
             <img
               src={clouds}
-              className="absolute -left-[40%] top-14 w-full"
+              className="absolute -left-[27%] top-[2rem] w-full"
               alt=""
             />
             <img
               src={clouds}
-              className="absolute -right-[40%] top-14 w-full"
+              className="absolute -right-[20%] top-[2rem] w-full"
               alt=""
             />
           </div>
