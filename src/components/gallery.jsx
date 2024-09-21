@@ -3,12 +3,13 @@ import demo from "../assets/demo.png";
 export default function Gallery() {
   return (
     <>
-      <div className=" -mt-[20rem] h-[75rem]  sm:-mt-40  relative sm:h-[108rem] ">
-        <div className="container xl:max-w-[1430px] h-full mx-auto bg-red-00 ">
+      <div className=" relative ">
+        <div className="container relative flex flex-col  items-center  xl:p-10 -mt-10 sm:mt-0  mx-auto  ">
           {/* background layer */}
-          <div className="h-[68%] xl:max-w-[1430px] sm:h-[66%] container absolute xl:mx-auto bg-[#000000] opacity-[21%]"></div>
+
+          <div className="bg-[#000000] z-20 opacity-[21%]  sm:ml-0 w-[95%] sm:w-full xl:w-[95%] p-10 absolute mx-auto h-full xl:h-[94%]    "></div>
           {/* Gallery section */}
-          <div className="grid grid-cols-3 sm:grid-cols-5 p-5 gap-6 sm:gap-5">
+          <div className="z-10 grid grid-cols-3 sm:grid-cols-5 p-4 gap-5 sm:gap-2">
             <img src={demo} alt="" />
             <img src={demo} alt="" />
             <img src={demo} alt="" />
@@ -19,25 +20,18 @@ export default function Gallery() {
             <img src={demo} alt="" />
             <img src={demo} alt="" />
             <img src={demo} alt="" />
-            <span className="sm:hidden" alt="" />
-            <img src={demo} className="sm:hidden" alt="" />
-          </div>
-          <div className="container  mx-auto px-4 h-[4.7rem]  w-full xl:h-[12.75rem] sm:h-[11.5rem]  flex justify-between items-center">
-            <img src={demo} className="h-full" alt="" />
-            <h1 className="text-3xl  -mt-24 sm:mt-0 gap-0 tightly w-full sm:text-6xl text-center text-[#CA9E57] z-20 font-abhaya font-bold mb-0 sm:block flex flex-col items-center">
-              <span>G</span>
-              <span className="-mt-2">A</span>
-              <span className="-mt-2">L</span>
-              <span className="-mt-2">L</span>
-              <span className="-mt-2">E</span>
-              <span className="-mt-2">R</span>
-              <span className="-mt-2">Y</span>
-            </h1>
+            <img src={demo} alt="" />
+            {/* Gallery effects s */}
+            <span className="hidden sm:inline" alt="" />
+            <span className="hidden sm:inline" alt="" />
+            <span className="hidden sm:inline" alt="" />
 
-            <img src={demo} className="h-full" alt="" />
-          </div>
-
-          <div className="grid grid-cols-3 sm:grid-cols-5 p-5 gap-6 sm:gap-5">
+            <img src={demo} alt="" />
+            <img src={demo} alt="" />
+            <span className="inline sm:hidden" />
+            <img src={demo} alt="" />
+            <img src={demo} alt="" />
+            <span className="inline sm:hidden" />
             <img src={demo} alt="" />
             <img src={demo} alt="" />
             <img src={demo} alt="" />
@@ -45,21 +39,31 @@ export default function Gallery() {
             <img src={demo} alt="" />
             <img src={demo} alt="" />
             <img src={demo} alt="" />
-            <img src={demo} alt="" />
-            <img src={demo} alt="" />
-            <img src={demo} className="hidden sm:block" alt="" />
           </div>
 
-          <div className="-mt-[5rem] sm:mt-10 flex flex-col justify-center items-center z-40 absolute container mx-auto h-[28rem]">
-            <h1 className="text-2xl sm:text-6xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
-              AFTER MOVIE
-            </h1>
-            <img
-              src={demo}
-              className="h-[12rem] sm:w-[48rem] sm:min-h-[20rem]"
-              alt=""
-            />
-          </div>
+          {/* Diff gallery text for different dimension - Look for improvement */}
+          <h1 className="hidden sm:block text-3xl absolute top-[62%] sm:top-[50%] translate-y-[-50%] text-center sm:text-[6rem] w-full text-[#CA9E57] z-20 font-abhaya font-bold">
+            GALLERY
+          </h1>
+          <h1 className="flex sm:hidden flex-col text-3xl absolute top-[62%] translate-y-[-50%] text-center  w-full text-[#CA9E57] z-20 font-abhaya font-bold">
+            <span>G</span>
+            <span className="-mt-2">A</span>
+            <span className="-mt-2">L</span>
+            <span className="-mt-2">L</span>
+            <span className="-mt-2">E</span>
+            <span className="-mt-2">R</span>
+            <span className="-mt-2">Y</span>
+          </h1>
+        </div>
+        <div className="bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40  container mx-auto ">
+          <h1 className="text-2xl sm:text-6xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
+            AFTER MOVIE
+          </h1>
+          <img
+            src={demo}
+            className=" w-1/2 sm:w-[46rem] sm:min-h-[20rem]"
+            alt=""
+          />
         </div>
       </div>
     </>

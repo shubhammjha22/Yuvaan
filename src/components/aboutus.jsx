@@ -1,12 +1,12 @@
 import yuvaan_logo_1 from "../assets/yuvaan_logo_1.png";
-import LFC from "../assets/LFC.png";
+import LFC from "../assets/LFC_2.png";
 
 export default function About() {
   return (
     <>
-      <div className="h-[50rem] ">
-        <div className="container xl:max-w-[1430px] mt-28 mx-auto h-[35rem]  ">
-          <div className="h-64 flex flex-col lg:flex-row items-center justify-between">
+      <div className=" ">
+        <div className="container xl:px-10 mt-28 mx-auto">
+          <div className="h-64  flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col items-start px-4 sm:p-0">
               <h1 className="text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
                 ABOUT YUVAAN
@@ -38,24 +38,25 @@ export default function About() {
             </div>
             <img
               src={yuvaan_logo_1}
-              className="hidden sm:block h-full "
+              className="hidden lg:block h-full "
               alt=""
             />
           </div>
 
-          <div className=" lg:ml-0 h-64 -mt-10 sm:mt-10 flex flex-col lg:flex-row items-center justify-between">
-            <img
+          <div className="h-[18rem] lg:ml-0 -mt-10 sm:mt-10 flex flex-col lg:flex-row items-center justify-between">
+            {/* <img
               src={LFC}
               className="hidden sm:block -ml-24 -mr-12  xl:ml-0 xl:mr-0 h-[24rem] mx-0"
               alt=""
-            />
+            /> */}
+            <img src={LFC} className=" -mr-14 hidden lg:block h-full" alt="" />
             <div className="flex flex-col items-end px-3 sm:p-0">
               <h1 className="relative mr-2 sm:mr-0 text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
                 ABOUT LFC
                 <span>
                   <img
                     src={LFC}
-                    className="absolute -top-6 -left-16 w-20 h-20 sm:hidden "
+                    className=" absolute -top-6 -left-16 w-20 h-20 lg:hidden "
                     alt=""
                   />
                 </span>
