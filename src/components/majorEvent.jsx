@@ -23,16 +23,16 @@ function MajorEvent() {
           style={{ transform: `rotateZ(${rotation}deg)` }}
         />
       </div>
-      <div className="ml-0 mt-44  sm:ml-60  sm:mt-24  sm:p-10">
-        <h1 className="text-5xl text-center sm:text-left sm:text-6xl  sm:mt-0 text-[#CA9E57] font-abhaya font-bold  mb-10">
+      <div className="ml-0 mt-44  xl:max-w-[1022px] xl:ml-60  xl:mt-24  xl:p-10">
+        <h1 className="text-5xl text-center xl:text-left sm:text-6xl  xl:mt-0 text-[#CA9E57] font-abhaya font-bold  mb-10">
           MAJOR EVENTS
         </h1>
-        <div className="-mt-14 sm:-mt-10 z-20 flex sm:mr-10 sm:h-[900px] ">
-          <div className=" flex mt-10 flex-row flex-wrap justify-center gap-5 w-[500px] xl:w-[900px] lg:w-[700px] md:w-[600px] sm:h-[600px] ">
+        <div className="-mt-14 xl:-mt-10 z-20 flex xl:mr-10 ">
+          <div className=" flex mt-10 flex-row flex-wrap justify-center gap-5 ">
             {[...Array(8)].map((_, index) => (
               <div
                 key={index}
-                className=" bg-black bg-opacity-40 z-20 w-[160px] h-[200px] sm:h-[16rem] sm:w-[210px]  border-1 border-black shadow-[10px_10px_8px_rgba(0,0,0,0.3)] rounded-xl p-0  "
+                className=" bg-black bg-opacity-40 z-20 w-[160px] h-[200px] xl:h-[16rem] xl:w-[210px]  border-1 border-black shadow-[10px_10px_8px_rgba(0,0,0,0.3)] rounded-xl p-0  "
               >
                 <img
                   src={demo}
