@@ -17,7 +17,7 @@ export default function Theme() {
   return (
     <>
       {/* Theme */}
-      <div className="flex relative  -mt-[10rem] sm:-mt-[6rem] gap-10 justify-center items-center">
+      <div className="flex relative  -mt-[10rem]  sm:-mt-[15rem] gap-10 justify-center items-center">
         <div className="img w-[18rem] -mr-[20rem] sm:w-[50vw] sm:-mr-[15rem] relative flex ">
           <img
             src={realms}
