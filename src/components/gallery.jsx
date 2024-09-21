@@ -61,7 +61,7 @@ export default function Gallery() {
           </h1>
           <img
             src={demo}
-            className=" w-1/2 sm:w-[46rem] sm:min-h-[20rem]"
+            className=" w-1/2 sm:w-[46rem] sm:max-h-[20rem]"
             alt=""
           />
         </div>
