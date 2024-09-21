@@ -47,13 +47,13 @@ function HomePage() {
               />
               <img
                 src={dates}
-                className="absolute right-24 bottom-[22rem] md:bottom-[9rem] md:-right-[6rem]  w-[60%]"
+                className="absolute right-24 bottom-[22rem]  lg:bottom-[9rem] md:-right-[6rem]  w-[60%]"
                 alt=""
               />
               {/* Mobile display this jugaad later fix this */}
               <img
                 src={warrior}
-                className=" absolute sm:hidden h-[55%]  -right-[5.75rem] bottom-[8.5rem] "
+                className=" absolute md:hidden h-[55%]  -right-[5.75rem] bottom-[8.5rem] "
                 alt=""
               />
             </div>
@@ -61,7 +61,7 @@ function HomePage() {
               <div className="sm:w-[60%]">
                 <img
                   src={warrior}
-                  className=" absolute hidden sm:block sm: w-3/2 sm:-top-4 md:left-[3.5rem] sm:h-full md:w-[82%] "
+                  className=" absolute hidden md:block sm: w-3/2 sm:-top-4 md:left-[3.5rem] sm:h-full md:w-[82%] "
                   alt=""
                 />
               </div>
@@ -71,17 +71,17 @@ function HomePage() {
         {/* CLOUDS */}
         <Clouds />
         {/* Major Events */}
-        <section className="mt-32 relative w-full sm:h-[70vh]">
+        <section className="mt-32 relative w-full ">
           <MajorEvent />
         </section>
 
         {/* Layout */}
-        <section className="h-[100vh] relative">
+        <section className="relative">
           <Layout />
         </section>
 
         {/* THeme */}
-        <section className=" -mt-[13rem]  sm:mt-0 relative">
+        <section className=" mt-[2rem]  xl:mt-0 relative">
           <Theme />
         </section>
 
