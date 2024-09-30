@@ -1,4 +1,4 @@
-import white_images from "../assets/demo.png";
+import white_images from "/assets/demo.png";
 
 export default function Contacts() {
   return (

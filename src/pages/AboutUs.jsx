@@ -1,4 +1,4 @@
-import website_texture from "../assets/website_texture.png";
+import website_texture from "/assets/website_texture.png";
 
 import SocialMedia from "../components/socialMedia";
 import About from "../components/aboutus";

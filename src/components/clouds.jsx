@@ -1,5 +1,5 @@
-import clouds from "../assets/cloud-1.png";
-import birds from "../assets/birds.png";
+import clouds from "/assets/cloud-1.png";
+import birds from "/assets/birds.png";
 export default function Clouds() {
   return (
     <>

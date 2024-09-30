@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import realms from "../assets/realms.png";
+import realms from "/assets/realms.png";
 
 export default function Theme() {
   const [logoPosition, setLogoPosition] = useState(0);

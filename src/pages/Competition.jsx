@@ -1,8 +1,8 @@
 import SocialMedia from "../components/socialMedia";
-import website_texture from "../assets/website_texture.png";
-import box from "../assets/box.png";
-import left_hero from "../assets/left_hero.png";
-import right_hero from "../assets/right_hero.png";
+import website_texture from "/assets/website_texture.png";
+import box from "/assets/box.png";
+import left_hero from "/assets/left_hero.png";
+import right_hero from "/assets/right_hero.png";
 
 export default function Competition() {
   return (

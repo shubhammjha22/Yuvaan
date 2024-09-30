@@ -1,5 +1,5 @@
-import yuvaan_logo_1 from "../assets/yuvaan_logo_1.png";
-import LFC from "../assets/LFC_2.png";
+import yuvaan_logo_1 from "/assets/yuvaan_logo_1.png";
+import LFC from "/assets/LFC_2.png";
 
 export default function About() {
   return (

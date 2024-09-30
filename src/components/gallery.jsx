@@ -1,4 +1,4 @@
-import demo from "../assets/demo.png";
+import demo from "/assets/demo.png";
 
 export default function Gallery() {
   return (

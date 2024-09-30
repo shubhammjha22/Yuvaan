@@ -1,4 +1,4 @@
-import soldier from "../assets/soldier.png";
+import soldier from "/assets/soldier.png";
 import SocialMedia from "./socialMedia.jsx";
 
 export default function Stats() {

@@ -1,11 +1,11 @@
-import logo from "../assets/Artboard.png";
-import warrior from "../assets/char1.png";
-import yuvaan from "../assets/yuvaan.png";
-import dates from "../assets/dates-1.png";
+import logo from "/assets/Artboard.png";
+import warrior from "/assets/char1.png";
+import yuvaan from "/assets/yuvaan.png";
+import dates from "/assets/dates-1.png";
 
-import moon from "../assets/moon.png";
+import moon from "/assets/moon.png";
 
-import website_texture from "../assets/website_texture.png";
+import website_texture from "/assets/website_texture.png";
 
 import MajorEvent from "../components/majorEvent.jsx";
 import Layout from "../components/layout2.jsx";

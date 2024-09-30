@@ -1,7 +1,7 @@
-import instagramlogo from "../assets/instagram-logo.png";
-import facebooklogo from "../assets/facebook-logo.png";
-import youtubelogo from "../assets/youtube-logo.png";
-import linkedinlogo from "../assets/linkedin-logo.png";
+import instagramlogo from "/assets/instagram-logo.png";
+import facebooklogo from "/assets/facebook-logo.png";
+import youtubelogo from "/assets/youtube-logo.png";
+import linkedinlogo from "/assets/linkedin-logo.png";
 
 function SocialMedia() {
   return (

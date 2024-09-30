@@ -1,5 +1,5 @@
 import React from "react";
-import aftermovie from "../assets/aftermovie.png";
+import aftermovie from "/assets/aftermovie.png";
 
 function Layout() {
   return (

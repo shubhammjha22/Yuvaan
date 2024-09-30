@@ -1,7 +1,7 @@
-import website_texture from "../assets/website_texture.png";
+import website_texture from "/assets/website_texture.png";
 import DGM from "../components/dgm";
 import SocialMedia from "../components/socialMedia";
-import white_images from "../assets/demo.png";
+import white_images from "/assets/demo.png";
 import Contacts from "../components/contacts";
 
 export default function ContantUs() {
