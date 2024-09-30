@@ -1,5 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// Speed n Analytics components
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
+// Pages
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
 import EventsRoot from "./pages/EventsRoot";
@@ -39,7 +43,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />;
+      <SpeedInsights />
+      <Analytics />
+    </>
+  );
 }
 
 export default App;
