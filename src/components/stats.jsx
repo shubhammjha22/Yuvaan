@@ -1,7 +1,7 @@
 import SocialMedia from "./socialMedia.jsx";
 
 const soldier =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753754/soldier_mk9mnd.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753754/soldier_mk9mnd.png";
 
 export default function Stats() {
   return (

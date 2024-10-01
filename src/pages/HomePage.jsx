@@ -1,16 +1,16 @@
 // images from cloudinary
 const website_texture =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753755/website_texture_w3rlkw.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753755/website_texture_w3rlkw.png";
 const logo =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753762/Artboard_npkppl.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753762/Artboard_npkppl.png";
 const warrior =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753741/char1_k1inyc.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/char1_k1inyc.png";
 const yuvaan =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753759/yuvaan_eqrtys.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753759/yuvaan_eqrtys.png";
 const dates =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753741/dates-1_kealsq.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/dates-1_kealsq.png";
 const moon =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753750/moon_kfs0bi.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753750/moon_kfs0bi.png";
 
 import MajorEvent from "../components/majorEvent.jsx";
 import Layout from "../components/layout2.jsx";

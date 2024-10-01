@@ -1,7 +1,7 @@
 const birds =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753740/birds_dbovyg.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753740/birds_dbovyg.png";
 const clouds =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753741/cloud-1_lhubfd.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/cloud-1_lhubfd.png";
 
 export default function Clouds() {
   return (

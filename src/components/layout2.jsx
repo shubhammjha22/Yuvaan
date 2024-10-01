@@ -1,5 +1,5 @@
 const aftermovie =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/aftermovie_feltfl.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753761/aftermovie_feltfl.png";
 
 function Layout() {
   return (
