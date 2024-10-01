@@ -1,5 +1,5 @@
 const logo =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753761/yuvaan_logo_1_hzzjqe.png";
 
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
