@@ -1,8 +1,7 @@
 import website_texture from "/assets/website_texture.png";
-import DGM from "../components/dgm";
 import SocialMedia from "../components/socialMedia";
-import white_images from "/assets/demo.png";
 import Contacts from "../components/contacts";
+import Queries from "../components/query";
 
 export default function ContantUs() {
   return (
@@ -25,9 +24,9 @@ export default function ContantUs() {
         <div className=" bg-footer-gradient w-full h-24 absolute bottom-0 "></div>
 
         {/* DGM */}
-        <DGM />
+        <Queries />
 
-        <div className="absolute bottom-10 left-16">
+        <div className="absolute bottom-10 left-4 sm:left-16">
           <SocialMedia />
         </div>
       </div>
