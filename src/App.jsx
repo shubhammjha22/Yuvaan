@@ -1,4 +1,8 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 // Speed n Analytics components
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -11,6 +15,9 @@ import ComingSoon from "./pages/ComingSoon";
 import Competition from "./pages/Competition";
 import ContantUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import Sponsors from "./pages/Sponsors";
+import Passes from "./pages/Passes";
+import Accommodations from "./pages/Accommodations";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +44,23 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <AboutUs />,
+      },
+      {
+        path: "sponsors",
+        element: <Sponsors />,
+      },
+      {
+        path: "passes",
+        element: <Passes />,
+      },
+      {
+        path: "accommodations",
+        element: <Accommodations />,
+      },
+      // Catch-all route for undefined paths
+      {
+        path: "*",
+        element: <Navigate to="/" />,
       },
     ],
   },
