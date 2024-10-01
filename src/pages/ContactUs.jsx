@@ -1,4 +1,7 @@
-import website_texture from "/assets/website_texture.png";
+// images from cloudinary
+const website_texture =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753755/website_texture_w3rlkw.png";
+
 import SocialMedia from "../components/socialMedia";
 import Contacts from "../components/contacts";
 import Queries from "../components/query";

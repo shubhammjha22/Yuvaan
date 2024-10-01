@@ -1,5 +1,7 @@
-import yuvaan_logo_1 from "/assets/yuvaan_logo_1.png";
-import LFC from "/assets/LFC_2.png";
+const LFC =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753747/LFC_2_sfjm0r.png";
+const yuvaan_logo_1 =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
 
 export default function About() {
   return (

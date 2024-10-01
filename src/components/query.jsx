@@ -12,7 +12,7 @@ export default function Queries() {
           rel="noopener noreferrer"
         >
           <img
-            src="assets/whatsapp-logo.png"
+            src="https://res.cloudinary.com/derpoctie/image/upload/v1727753756/whatsapp-logo_o8eyre.png"
             className="w-8 h-8 mr-3 mb-1"
             alt=""
           />

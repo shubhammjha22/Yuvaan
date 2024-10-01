@@ -1,5 +1,8 @@
-import clouds from "/assets/cloud-1.png";
-import birds from "/assets/birds.png";
+const birds =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753740/birds_dbovyg.png";
+const clouds =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753741/cloud-1_lhubfd.png";
+
 export default function Clouds() {
   return (
     <>

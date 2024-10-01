@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
-import globe from "/assets/globe.png";
-import demo from "/assets/demo.png";
+
+const globe =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753744/globe_fnvhwn.png";
+const demo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753742/demo_fzapwb.png";
 
 function MajorEvent() {
   const [rotation, setRotation] = useState(0);

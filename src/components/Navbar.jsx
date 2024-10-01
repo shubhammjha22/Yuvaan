@@ -1,6 +1,9 @@
+const logo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
+
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "/assets/yuvaan_logo_1.png";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Import hamburger and close icons
 import { HiArrowLeft } from "react-icons/hi"; // Import back arrow icon
 

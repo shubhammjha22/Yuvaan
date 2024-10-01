@@ -1,5 +1,3 @@
-import { HiMenuAlt1 } from "react-icons/hi";
-
 export default function ImgCard({ imgUrl, name, insta, heading }) {
   return (
     <div>
@@ -14,7 +12,11 @@ export default function ImgCard({ imgUrl, name, insta, heading }) {
             className="h-6 w-6 mx-auto mix-blend-difference mb-1 -mt-1"
             target="_blank"
           >
-            <img src="/assets/instagram-logo.png" className="relative" alt="" />
+            <img
+              src="https://res.cloudinary.com/derpoctie/image/upload/v1727753745/instagram-logo_wskuia.png"
+              className="relative"
+              alt=""
+            />
           </a>
         </div>
         {heading && (

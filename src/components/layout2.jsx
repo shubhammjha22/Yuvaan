@@ -1,5 +1,5 @@
-import React from "react";
-import aftermovie from "/assets/aftermovie.png";
+const aftermovie =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/aftermovie_feltfl.png";
 
 function Layout() {
   return (

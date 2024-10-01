@@ -1,7 +1,11 @@
-import instagramlogo from "/assets/instagram-logo.png";
-import facebooklogo from "/assets/facebook-logo.png";
-import youtubelogo from "/assets/youtube-logo.png";
-import linkedinlogo from "/assets/linkedin-logo.png";
+const instagramlogo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753745/instagram-logo_wskuia.png";
+const facebooklogo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753743/facebook-logo_lpmqxq.png";
+const youtubelogo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753758/youtube-logo_rhnsua.png";
+const linkedinlogo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753748/linkedin-logo_w7jonr.png";
 
 function SocialMedia() {
   return (

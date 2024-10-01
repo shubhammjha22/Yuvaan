@@ -1,8 +1,14 @@
+// images from cloudinary
+const website_texture =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753755/website_texture_w3rlkw.png";
+const box =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753741/box_yqdg9c.png";
+const left_hero =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753746/left_hero_aef1rk.png";
+const right_hero =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753752/right_hero_ccupof.png";
+
 import SocialMedia from "../components/socialMedia";
-import website_texture from "/assets/website_texture.png";
-import box from "/assets/box.png";
-import left_hero from "/assets/left_hero.png";
-import right_hero from "/assets/right_hero.png";
 
 export default function Competition() {
   return (

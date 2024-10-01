@@ -1,4 +1,5 @@
-import demo from "/assets/demo.png";
+const demo =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753742/demo_fzapwb.png";
 
 export default function Gallery() {
   return (

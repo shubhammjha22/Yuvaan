@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import realms from "/assets/realms.png";
+
+const realms =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753751/realms_y0wixi.png";
 
 export default function Theme() {
   const [logoPosition, setLogoPosition] = useState(0);
