@@ -1,6 +1,6 @@
 // images from cloudinary
 const website_texture =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753755/website_texture_w3rlkw.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753755/website_texture_w3rlkw.png";
 const logo =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753762/Artboard_npkppl.png";
 const warrior =
