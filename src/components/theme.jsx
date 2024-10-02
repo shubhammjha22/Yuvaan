@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const realms =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753751/realms_y0wixi.png";
 
 export default function Theme() {
-  const [logoPosition, setLogoPosition] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLogoPosition((prevPosition) => (prevPosition + 0.04) % (2 * Math.PI));
-    }, 10); // 60 FPS for smoother animation
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const translateY = Math.sin(logoPosition) * 4;
-
   return (
     <>
       {/* Theme */}
       <div className="flex relative  -mt-[10rem]  sm:-mt-[15rem] gap-10 justify-center items-center">
         <div className="img w-[18rem] -mr-[20rem] sm:w-[50vw] sm:-mr-[15rem] relative flex ">
-          <img
-            src={realms}
-            className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
-            style={{ transform: `translateY(${translateY}px)` }}
-            alt=""
-          />
+          <motion.div
+            animate={{
+              translateY: [0, -8, 0], // Oscillating effect
+            }}
+            transition={{
+              duration: 1.5,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+            className="w-full h-full"
+          >
+            <img
+              src={realms}
+              className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
+              alt=""
+            />
+          </motion.div>
         </div>
         <div className="flex flex-col p-10 -mr-24 sm:mr-10   ">
           <h2 className="text-base sm:text-2xl text-underline  mt-[4rem]  text-[#CA9E57] font-abhaya font-light opacity-70  mb-0">

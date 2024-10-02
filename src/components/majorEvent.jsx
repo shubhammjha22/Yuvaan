@@ -1,30 +1,29 @@
-import React, { useState, useEffect } from "react";
-
+import { motion } from "framer-motion";
 const globe =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753744/globe_fnvhwn.png";
 const demo =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753742/demo_fzapwb.png";
 
 function MajorEvent() {
-  const [rotation, setRotation] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRotation((prevRotation) => prevRotation + 1);
-    }, 40);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="-mt-32 p-2 sm:p-10 text-white font-bold relative">
       <div className="absolute z-10 mt-64 -left-[34rem] sm:-left-[18rem] sm:w-[34rem] sm:h-[34rem] w-[50rem] h-[50rem]">
-        <img
-          src={globe}
-          alt="Globe"
-          className="w-full h-full object-cover rounded-full"
-          style={{ transform: `rotateZ(${rotation}deg)` }}
-        />
+        <motion.div
+          animate={{ rotateZ: 360 }}
+          transition={{
+            duration: 10, // Adjust the rotation duration as needed
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="w-full h-full"
+        >
+          <img
+            src={globe}
+            alt="Globe"
+            className="w-full h-full object-cover rounded-full"
+          />
+        </motion.div>
       </div>
       <div className="ml-0 mt-44  xl:max-w-[1022px] xl:ml-60  xl:mt-24  xl:p-10">
         <h1 className="text-5xl text-center xl:text-left sm:text-6xl  xl:mt-0 text-[#CA9E57] font-abhaya font-bold  mb-10">

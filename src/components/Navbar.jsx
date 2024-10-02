@@ -1,25 +1,15 @@
 const logo =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753761/yuvaan_logo_1_hzzjqe.png";
 
-import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Import hamburger and close icons
 import { HiArrowLeft } from "react-icons/hi"; // Import back arrow icon
 
 function Navbar() {
-  const [logoPosition, setLogoPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false); // State to track the mobile menu
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLogoPosition((prevPosition) => (prevPosition + 0.05) % (2 * Math.PI));
-    }, 10); // 60 FPS for smoother animation
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const translateY = Math.sin(logoPosition) * 4; // Oscillates between -10 and +10
 
   // Toggle menu open/close
   const toggleMenu = () => {
@@ -49,14 +39,31 @@ function Navbar() {
         </div>
 
         {/* Logo in the center with vertical movement */}
-        <div
+        {/* <div
           className="ml-4 lg:ml-0 relative"
           style={{ transform: `translateY(${translateY}px)` }}
         >
           <NavLink to="/" className="z-20">
             <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
           </NavLink>
-        </div>
+        </div> */}
+
+        {/* framer animation */}
+        <motion.div
+          animate={{
+            translateY: [0, -8, 0], // Oscillating effect
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeInOut",
+            repeat: Infinity,
+          }}
+          className="ml-4 lg:ml-0 relative"
+        >
+          <NavLink to="/" className="z-20">
+            <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
+          </NavLink>
+        </motion.div>
 
         {/* Right-side links for large screens */}
         <div className="hidden lg:flex space-x-5">
