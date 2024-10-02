@@ -17,8 +17,16 @@ import Layout from "../components/layout2.jsx";
 import Theme from "../components/theme.jsx";
 import Stats from "../components/stats.jsx";
 import Clouds from "../components/clouds.jsx";
+import { useEffect } from "react";
 
 function HomePage() {
+  useEffect(() => {
+    const element = document.getElementById("home");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <>
       <div className="relative  overflow-x-hidden bg-custom-gradient-0">
@@ -32,7 +40,7 @@ function HomePage() {
           }}
         />
         {/* Hero section */}
-        <section className="relative h-[100vh]">
+        <section id="home" className="relative h-[100vh]">
           <img
             src={logo}
             className="absolute top-0 -ml-[90%] h-[100%] md:ml-0 inset-0 min-w-[500vw] md:min-w-full md:h-[100vh]  mix-blend-overlay "
