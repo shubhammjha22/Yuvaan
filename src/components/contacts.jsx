@@ -91,7 +91,7 @@ export default function Contacts() {
 
         {/* PRESIDENT */}
         <div className="flex flex-col min-w-[225px] w-[60%] mt-4 sm:mt-0 sm:w-[45%]">
-          <h1 className="text-5xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
+          <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             PRESIDENT
           </h1>
           <div className="flex sm:flex-row flex-col mt-2 sm:justify-between gap-10 sm:items-center">
@@ -107,7 +107,7 @@ export default function Contacts() {
         {/* TREASURER */}
 
         <div className="mt-16 flex flex-col min-w-[225px] w-[60%] sm:w-[45%]">
-          <h1 className="text-5xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
+          <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             TREASURER
           </h1>
           <div className="flex sm:flex-row flex-col mt-2 justify-between gap-10 items-center">
@@ -119,7 +119,7 @@ export default function Contacts() {
         {/* VICE PRESIDENT */}
 
         <div className="mt-16 flex flex-col min-w-[225px] w-[60%] sm:w-[65%]">
-          <h1 className="text-5xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
+          <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             VICE PRESIDENT
           </h1>
           <div className="flex sm:flex-row flex-col mt-2 gap-10 justify-between items-center">
