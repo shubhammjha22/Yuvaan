@@ -53,7 +53,9 @@ function Navbar() {
           className="ml-4 lg:ml-0 relative"
           style={{ transform: `translateY(${translateY}px)` }}
         >
-          <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
+          <NavLink to="/" className="z-20">
+            <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
+          </NavLink>
         </div>
 
         {/* Right-side links for large screens */}
@@ -101,28 +103,56 @@ function Navbar() {
               <HiArrowLeft size={24} /> {/* Back arrow icon */}
             </button>
             <div className="mt-10 space-y-6 text-white">
-              <NavLink to="/" className="block text-lg">
+              <NavLink to="/" onClick={toggleMenu} className="block text-lg">
                 HOME
               </NavLink>
-              <NavLink to="/events" className="block text-lg">
+              <NavLink
+                to="/events"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 EVENTS
               </NavLink>
-              <NavLink to="/competitions" className="block text-lg">
+              <NavLink
+                to="/competitions"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 COMPETITIONS
               </NavLink>
-              <NavLink to="/sponsors" className="block text-lg">
+              <NavLink
+                to="/sponsors"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 SPONSORS
               </NavLink>
-              <NavLink to="/passes" className="block text-lg">
+              <NavLink
+                to="/passes"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 PASSES
               </NavLink>
-              <NavLink to="/accommodations" className="block text-lg">
+              <NavLink
+                to="/accommodations"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 ACCOMMODATIONS
               </NavLink>
-              <NavLink to="/contact" className="block text-lg">
+              <NavLink
+                to="/contact"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 CONTACT US
               </NavLink>
-              <NavLink to="/about" className="block text-lg">
+              <NavLink
+                to="/about"
+                onClick={toggleMenu}
+                className="block text-lg"
+              >
                 ABOUT US
               </NavLink>
             </div>
