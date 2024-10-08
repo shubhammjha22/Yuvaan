@@ -1,30 +1,35 @@
 import { motion } from "framer-motion";
+import { filter } from "framer-motion/client";
 
 const containerVariants = {
-  hidden: { opacity: 0, x: "-30vw" },
+  hidden: { opacity: 0, filter: "blur(5px)" },
   visible: {
     opacity: 1,
-    x: 0,
+    filter: "blur(0px)",
     transition: {
       type: "tween", // Use "tween" for a smooth transition
       ease: "easeInOut", // Makes the animation smoother
-      duration: 0.8, // Adjust the duration for the smoothness
+      duration: 0.5, // Adjust the duration for the smoothness
 
-      staggerChildren: 0.2, // Delay between child elements for a staggered effect
+      //   staggerChildren: 0.2, // Delay between child elements for a staggered effect
     },
   },
 };
 
 const childVariants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { type: "tween", duration: 0.5 } },
+  hidden: { opacity: 0, filter: "blur(1px)" },
+  visible: {
+    opacity: 1,
+    filter: "blur(0px)",
+    transition: { type: "tween", duration: 0.6 },
+  },
 };
 
 export default function ContentInfo({ backgroundImages, activeImage }) {
   return (
     <>
       <motion.div
-        className="relative sm:block mt-24 sm:mt-10 mb-0 sm:ml-32 z-20 p-10 sm:w-1/2 h-[20rem]"
+        className="relative sm:block mt-24 sm:mt-10 mb-0 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -50,14 +55,14 @@ export default function ContentInfo({ backgroundImages, activeImage }) {
         </motion.h2>
 
         <motion.p
-          className="w-[36rem] text-base text-white"
+          className="w-[36rem] text-base font-abhaya text-white"
           variants={childVariants}
         >
           {backgroundImages[activeImage].description}
         </motion.p>
 
         <motion.ul
-          className="text-sm text-white list-disc list-outside"
+          className="text-sm text-white font-abhaya list-disc list-outside"
           variants={childVariants}
         >
           <motion.li variants={childVariants}>
@@ -77,7 +82,7 @@ export default function ContentInfo({ backgroundImages, activeImage }) {
         </motion.ul>
 
         <motion.button
-          className="mt-1 text-sm text-white bg-[#CA9E57] rounded-xl py-1 px-3"
+          className="mt-1 text-base font-abhaya text-white bg-[#CA9E57] rounded-xl py-1 px-3"
           variants={childVariants}
         >
           REGISTER
