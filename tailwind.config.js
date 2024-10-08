@@ -15,6 +15,8 @@ export default {
       },
       fontFamily: {
         abhaya: ['"Abhaya Libre"', "serif"],
+        cormorant: ["Cormorant Garamond", "serif"],
+        heading: ["Heading", "sans-serif"],
       },
     },
   },
