@@ -2,7 +2,7 @@ const logo =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753761/yuvaan_logo_1_hzzjqe.png";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Import hamburger and close icons
@@ -15,10 +15,32 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const navRef = useRef(null); // Create a reference for the navbar
+
+  // Scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navRef.current) {
+        if (window.scrollY > 50) {
+          navRef.current.classList.add("backdrop-blur-sm");
+        } else {
+          navRef.current.classList.remove("backdrop-blur-sm");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="fixed top-4 flex justify-center items-center w-full h-16 z-50">
-      <nav className="lg:container sm:bg-[#191919] sm:bg-opacity-30 xl:w-[70%] lg:min-w-[1030px] w-[100%] h-8 mx-auto flex justify-between lg:items-center lg:py-2 lg:px-6  lg:border-b-[1.25px] border-black rounded-xl">
+    <div
+      ref={navRef}
+      className="fixed   flex justify-center items-center w-full h-16 z-50"
+    >
+      <nav className="lg:container sm:mt-4 sm:bg-[#191919] sm:bg-opacity-30 xl:w-[70%] lg:min-w-[1030px] w-[100%] h-8 mx-auto flex justify-between lg:items-center lg:py-2 lg:px-6  lg:border-b-[1.25px] border-black rounded-xl">
         {/* Left-side links */}
         <div className="ml-5 hidden lg:flex space-x-9">
           <NavLink to="/" className="text-white hover:text-gray-400">
@@ -87,9 +109,7 @@ function Navbar() {
         {/* Hamburger Icon for mobile screens */}
         <div className="lg:hidden absolute top-4 right-4 text-white">
           <button onClick={toggleMenu}>
-            {isOpen ? (
-              <AiOutlineClose size={24} /> // Close icon when menu is open
-            ) : (
+            {isOpen ? null : ( // <AiOutlineClose size={24} /> // Close icon when menu is open
               <AiOutlineMenu
                 className="bg-[#191919] bg-opacity-40 p-2 w-10 h-10 rounded-xl "
                 size={24}
@@ -100,12 +120,12 @@ function Navbar() {
 
         {/* Full-screen overlay for mobile menu */}
         <div
-          className={`fixed inset-0 z-40 bg-black bg-opacity-90 transform ${
+          className={`fixed inset-0 z-40  transform ${
             isOpen ? "translate-x-[40%]" : "translate-x-full"
           } transition-transform duration-300 ease-in-out `}
         >
           {/* Back arrow and navigation links */}
-          <div className="p-6  ">
+          <div className="p-6  bg-black bg-opacity-90 h-[100vh]">
             <button onClick={toggleMenu} className="text-white">
               <HiArrowLeft size={24} /> {/* Back arrow icon */}
             </button>
