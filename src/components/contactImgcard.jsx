@@ -21,7 +21,7 @@ export default function ImgCard({ imgUrl, name, insta, heading }) {
         </div>
         {heading && (
           <div className="absolute w-full mt-2 flex justify-center">
-            <h1 className="text-center absolute w-[135%] text-lg sm:text-3xl  text-[#CA9E57] font-abhaya font-bold">
+            <h1 className="text-center absolute w-[135%] leading-tight text-lg sm:text-3xl  text-[#CA9E57] font-abhaya font-bold">
               {heading}
             </h1>
           </div>

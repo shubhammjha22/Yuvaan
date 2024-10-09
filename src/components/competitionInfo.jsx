@@ -25,11 +25,11 @@ const childVariants = {
   },
 };
 
-export default function ContentInfo({ backgroundImages, activeImage }) {
+export default function CompetitionInfo({ backgroundImages, activeImage }) {
   return (
     <>
       <motion.div
-        className="relative sm:block mt-24 sm:mt-10 mb-0 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
+        className="relative sm:block mt-24 sm:mt-10 mb-3 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -55,14 +55,14 @@ export default function ContentInfo({ backgroundImages, activeImage }) {
         </motion.h2>
 
         <motion.p
-          className="w-[36rem] text-base font-abhaya text-white"
+          className="w-[38rem] text-base font-abhaya text-white"
           variants={childVariants}
         >
           {backgroundImages[activeImage].description}
         </motion.p>
 
         <motion.ul
-          className="text-sm text-white font-abhaya list-disc list-outside"
+          className="text-base text-white font-abhaya list-disc list-outside"
           variants={childVariants}
         >
           <motion.li variants={childVariants}>
