@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
 
-const videoUrl = "https://www.youtube.com/embed/ByrP3KAlXSY?&rel=0";
+const videoUrl =
+  "https://www.youtube.com/embed/ByrP3KAlXSY?&rel=0&autoplay=1&mute=1";
 
 export default function AfterMovie() {
   const [isVisible, setIsVisible] = useState(false);
@@ -58,7 +59,7 @@ export default function AfterMovie() {
           <img
             src={`https://img.youtube.com/vi/ByrP3KAlXSY/hqdefault.jpg`}
             alt="Video thumbnail"
-            className="cursor-pointer w-full h-[60vh] object-cover rounded-2xl" // Ensures the image is responsive
+            className="cursor-pointer w-full  sm:h-[60vh] object-cover rounded-2xl" // Ensures the image is responsive
             tabIndex="0" // Makes it focusable // Click to play video
           />
         )}
