@@ -13,7 +13,7 @@ const backgroundImages = [
     date: "19th October",
     venue: "B.R. Auditorum",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728194084/Competitions-tiny_oxrug2.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/Bayaan_thsefb.png",
   },
   {
     heading: "REALS OF IMAGINATION",
@@ -23,7 +23,7 @@ const backgroundImages = [
     date: "18th to 20 October",
     venue: "Mini OAT",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388935/2nd-full-bg_q3k2jm.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492164/REALMS_OF_IMAGINATION_sd86v1.png",
   },
   {
     heading: "BASANTI POUNCE MAT KARNA",
@@ -34,7 +34,7 @@ const backgroundImages = [
     date: "18th October",
     venue: "SPS 13",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388885/3rd-full-bg_xdwiwv.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492167/BASANTI_POUNCE_MAT_KARNA_bp7eeu.png",
   },
   {
     heading: "DELTECH DEBATATHON",
@@ -44,7 +44,7 @@ const backgroundImages = [
     date: "18th-19th October",
     venue: "Academic Block",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388885/4th-full-bg_lixvhb.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492164/DELTECH_DEBATATHON_tm1kec.png",
   },
   {
     heading: "SOLO FOLK COMPETITION",
@@ -53,7 +53,7 @@ const backgroundImages = [
     date: "19th October",
     venue: "B.R. Auditorum",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388887/5th-full-bg_dp1xwu.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492166/SOLO_FOLK_COMPETITION_uj0eye.png",
   },
   {
     heading: "NAYAAB",
@@ -63,7 +63,7 @@ const backgroundImages = [
     date: "20th October",
     venue: "B.R. Auditorum",
     cash: "15K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388887/6th-full-bg_ewf8ge.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/NAYAAB_dfawvl.png",
   },
   {
     heading: `DUET AND GROUP CLASSICAL COMPETITION`,
@@ -74,7 +74,7 @@ const backgroundImages = [
     date: "19th October",
     venue: "B.R. Auditorum",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388887/7th-full-bg_mxhvfd.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492167/DUET_AND_GROUP_CLASSICAL_COMPETITION_qdwjcj.png",
   },
   {
     heading: "CLASH OF COMICS",
@@ -84,7 +84,7 @@ const backgroundImages = [
     date: "18th-20th October",
     venue: "B.R. Auditorum",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388888/9th-full-bg_cpduoc.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492166/CLASH_OF_COMICS_ec20yz.png",
   },
   {
     heading: "CONSULTICA CHALLENGE",
@@ -94,7 +94,7 @@ const backgroundImages = [
     date: "19th October",
     venue: "SPS 13",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388887/10-full-bg_gwhipl.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/consultica_challenge_fprf9y.png",
   },
   {
     heading: "LENS LEGEND",
@@ -104,7 +104,7 @@ const backgroundImages = [
     date: "18th-20th October",
     venue: "Mini OAT",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388887/11-full-bg_gi3no0.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/LENS_LEGENDS_fir7st.png",
   },
   {
     heading: "KAVITRISHNA",
@@ -114,7 +114,7 @@ const backgroundImages = [
     date: "20th October",
     venue: "Convocation Hall",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388888/12-full-bg_uct7qc.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/Kavitrishna_ztsglo.png",
   },
   // image repeated here
   {
@@ -125,7 +125,7 @@ const backgroundImages = [
     date: "20th October",
     venue: "Convocation Hall",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388888/12-full-bg_uct7qc.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492167/The_Muse_Matter_anam7x.png",
   },
   {
     heading: "JUST A MINUTE",
@@ -135,7 +135,7 @@ const backgroundImages = [
     date: "18th October",
     venue: "Convocation Hall",
     cash: "4K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388889/13-full-bg_k8dlkr.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492163/JUST_A_MINUTE_kmqdor.png",
   },
   {
     heading: "BOOKMARK MAKING",
@@ -145,7 +145,7 @@ const backgroundImages = [
     date: "19th October",
     venue: "Convocation Hall",
     cash: "10K",
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388889/14-full-bg_cnvhzs.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492164/BOOKMARK_MAKING_fyyqfv.png",
   },
   {
     heading: "PHOTO EXHIBITION",
@@ -155,7 +155,7 @@ const backgroundImages = [
     date: "18th to 20th October",
     venue: "Mini OAT",
     cash: null,
-    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728388897/15-full-bg_nxwrmm.png",
+    url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492170/PHOTO_EXHIBITION_pj2jmj.png",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function Competition() {
         <section className="flex flex-col justify-evenly sm:block relative h-[100vh] overflow-hidden">
           <img
             src={backgroundImages[activeImage].url}
-            className="absolute z-0 h-[100vh] top-0 opacity-[100%] w-[100vw]"
+            className="absolute z-0 h-[100vh] sm:h-[100vh] top-0 -left-[116vw] sm:left-0 min-w-[300vw] minw-w-[80rem] sm:min-w-[100vw]"
             alt=""
           />
 
@@ -188,7 +188,8 @@ export default function Competition() {
           />
         </section>
 
-        <div className="absolute bottom-10 left-16">
+        <div className="bg-footer-gradient w-full h-1/4 absolute bottom-0 "></div>
+        <div className="absolute bottom-10 left-6 sm:left-16">
           <SocialMedia />
         </div>
       </div>
