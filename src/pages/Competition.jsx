@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import SocialMedia from "../components/socialMedia";
-import ContentInfo from "../components/contentInfo";
 import ImageSlider from "../components/imgSlider";
+import CompetitionInfo from "../components/competitionInfo";
 
 const backgroundImages = [
   {
@@ -177,7 +177,7 @@ export default function Competition() {
           />
 
           {/* Content info */}
-          <ContentInfo
+          <CompetitionInfo
             backgroundImages={backgroundImages}
             activeImage={activeImage}
           />
