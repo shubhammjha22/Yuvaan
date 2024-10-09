@@ -29,7 +29,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
   return (
     <>
       <motion.div
-        className="relative sm:block   backdrop-blur-[2px] sm:mt-10 mb-3 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
+        className="relative sm:block sm:backdrop-blur-[0px]  backdrop-blur-[2px] sm:mt-10 mb-3 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

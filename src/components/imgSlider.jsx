@@ -58,7 +58,7 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
 
   return (
     <>
-      <div className="relative w-[55%] -mt-12  mb-10 sm:mb-0 sm:w-[90%]  mx-auto   sm:overflow-hidden">
+      <div className="relative w-[55%] -mt-12  mb-10 sm:-mt-0 sm:mb-0 sm:w-[90%]  mx-auto   sm:overflow-hidden">
         <Slider className="sm:w-[95vw] " ref={sliderRef} {...settings}>
           {images.map((img, index) => (
             <div className=" relative h-full w-full" key={index}>
