@@ -1,3 +1,5 @@
+import AfterMovie from "./afterMovie";
+
 const demo =
   "https://res.cloudinary.com/derpoctie/image/upload/v1727753742/demo_fzapwb.png";
 
@@ -56,16 +58,7 @@ export default function Gallery() {
             <span className="-mt-2">Y</span>
           </h1>
         </div>
-        <div className="bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40  container mx-auto ">
-          <h1 className="text-2xl sm:text-6xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
-            AFTER MOVIE
-          </h1>
-          <img
-            src={demo}
-            className=" w-1/2 sm:w-[46rem] sm:max-h-[20rem]"
-            alt=""
-          />
-        </div>
+        <AfterMovie />
       </div>
     </>
   );
