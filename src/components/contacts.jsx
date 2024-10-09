@@ -1,4 +1,4 @@
-import ImgCard from "./imgcard";
+import ImgCard from "./contactImgcard";
 
 const data = [
   {
@@ -57,16 +57,16 @@ const data = [
   },
 
   {
-    name: "PRIYANSHU",
-    insta: "https://www.instagram.com/",
-    imgUrl:
-      "https://res.cloudinary.com/derpoctie/image/upload/v1727728615/Rectangle_36_zfjfrv.png",
-  },
-  {
     name: "HARSHIT GUPTA",
     insta: "https://www.instagram.com/_harshit.007/",
     imgUrl:
       "https://res.cloudinary.com/derpoctie/image/upload/v1727728614/Rectangle_35_h1iryz.png",
+  },
+  {
+    name: "PRIYANSHU",
+    insta: "https://www.instagram.com/",
+    imgUrl:
+      "https://res.cloudinary.com/derpoctie/image/upload/v1727728615/Rectangle_36_zfjfrv.png",
   },
   {
     name: "TANISH SHARMA",
@@ -151,16 +151,13 @@ export default function Contacts() {
           <div className="flex sm:flex-row  mt-2 justify-between gap-14 sm:gap-24 items-center">
             <ImgCard {...data[8]} heading="DIRECTOR OF DESIGN" />
 
-            <ImgCard {...data[9]} heading="DIRECTOR OF CREATIVE" />
+            <ImgCard {...data[9]} heading="DIRECTOR OF EVENT AND LOGISTICS" />
             <span className="hidden sm:block">
-              <ImgCard
-                {...data[10]}
-                heading="DIRECTOR OF EVENT AND LOGISTICS"
-              />
+              <ImgCard {...data[10]} heading="DIRECTOR OF CREATIVE" />
             </span>
           </div>
           <div className=" sm:hidden w-[45%] mt-20 mx-auto">
-            <ImgCard {...data[10]} heading="DIRECTOR OF EVENT AND LOGISTICS" />
+            <ImgCard {...data[10]} heading="DIRECTOR OF CREATIVE" />
           </div>
         </div>
 
