@@ -4,7 +4,7 @@ const aftermovie =
 function Layout() {
   return (
     <>
-      <div className=" mt-24 lg:mt-0 flex flex-col justify-center items-center">
+      <div className=" mt-10 lg:mt-0 flex flex-col justify-center items-center">
         <div className="flex flex-col lg:flex-row justify-center items-center">
           <div className="flex mt-24 w-[90vw]  sm:ml-0 lg:mt-0 flex-col lg:p-10 lg:ml-10 sm:w-[90%]  ">
             <h1 className="text-4xl sm:text-5xl -mt-[4rem]  sm:-mt-[10rem] text-[#CA9E57] font-abhaya font-bold  mb-0">
@@ -34,8 +34,18 @@ function Layout() {
               </span>
             </p>
           </div>
-          <div className="img  w-full max-w-[600px] -mt-12 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
-            <img src={aftermovie} className="z-10 " alt="" />
+          <div className="img  w-full max-w-[600px] -mt-10 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
+            <img
+              src={aftermovie}
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/watch?v=ByrP3KAlXSY",
+                  "_blank"
+                )
+              }
+              className="z-10 cursor-pointer "
+              alt=""
+            />
           </div>
         </div>
       </div>

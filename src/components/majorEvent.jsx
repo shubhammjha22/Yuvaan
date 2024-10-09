@@ -41,8 +41,6 @@ function MajorEvent() {
                   alt={`Image ${index + 1}`}
                   className="w-full h-[60%] object-cover rounded-lg shadow-md "
                 />
-
-                <p className="p-2 ">Helo</p>
               </div>
             ))}
           </div>

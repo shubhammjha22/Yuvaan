@@ -51,10 +51,10 @@ export default function StatsScroll() {
           y: index === index ? 0 : 10,
         }} // Animate to visible and in place
         // exit={{ opacity: 0, y: -20 }} // Exit by fading and moving upwards
-        transition={{ duration: 1 }} // Duration of each transition
-        className="leading-tight z-20 text-sm sm:text-xl w-[17rem] sm:w-[46rem] text-white font-abhaya mt-4 sm:mt-4 sm:font-lg"
+        transition={{ duration: 0.5 }} // Duration of each transition
+        className="leading-tight h-20 z-20 text-sm sm:text-xl w-[17rem] sm:w-[46rem] text-white font-abhaya mt-4 sm:mt-4 sm:font-lg"
       >
-        <b className="text-xl mb-0 sm:text-2xl">{textContent[index].title}</b>{" "}
+        <b className="text-xl mb-0 sm:text-3xl">{textContent[index].title}</b>{" "}
         <br />
         {textContent[index].text}
         <br />
