@@ -27,11 +27,20 @@ export default function Accommodations() {
         `}</style>
 
         <section className="relative h-full overflow-hidden">
-          <img
-            src={url}
-            className="absolute inset-0 z-0 h-[100vh] w-[100vw] -tp-40"
-            alt=""
-          />
+          <div className="sm:block hidden">
+            <img
+              src={url}
+              className="absolute inset-0 z-0 h-[100vh] w-[100vw] -tp-40"
+              alt=""
+            />
+          </div>
+          <div className="sm:hidden block">
+            <img
+              src={url2}
+              className="absolute inset-0 z-0 h-[100vh] w-[100vw] -tp-40"
+              alt=""
+            />
+          </div>
           <div
             className="absolute inset-0"
             style={{
@@ -53,7 +62,7 @@ export default function Accommodations() {
 
           <div className="bg-footer-gradient w-full h-1/4 z-10 absolute bottom-0 "></div>
 
-          <div className="absolute bottom-10 left-16">
+          <div className="absolute bottom-10 left-2 sm:left-16">
             <SocialMedia />
           </div>
         </section>
