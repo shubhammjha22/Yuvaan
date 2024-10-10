@@ -15,3 +15,11 @@
     font-weight: normal; /* You can specify different weights if needed */
     font-style: normal;  /* You can specify different styles if needed */
   };
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for all links */
+}
+

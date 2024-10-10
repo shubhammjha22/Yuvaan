@@ -29,7 +29,7 @@ function HomePage() {
 
   return (
     <>
-      <div className="relative  overflow-x-hidden bg-custom-gradient-0">
+      <div className="relative  overflow-hidden bg-custom-gradient-0">
         <div
           className="absolute inset-0"
           style={{
@@ -40,7 +40,7 @@ function HomePage() {
           }}
         />
         {/* Hero section */}
-        <section id="home" className="relative h-[100vh]">
+        <section id="home" className="relative ">
           <img
             src={logo}
             className="absolute top-0 -ml-[90%] h-[100%] md:ml-0 inset-0 min-w-[500vw] md:min-w-full md:h-[100vh]  mix-blend-overlay "
@@ -48,7 +48,7 @@ function HomePage() {
           />
           <img
             src={moon}
-            className="absolute -top-8 left-[70rem] h-[54rem]    mix-blend-overlay "
+            className="absolute hidden sm:block -top-8 left-[70rem] h-[54rem]    mix-blend-overlay "
             alt=""
           />
           <div className="h-[100vh] w-[100vw] flex gap-10">
@@ -63,7 +63,7 @@ function HomePage() {
                 className="absolute right-24 bottom-[22rem]  lg:bottom-[9rem] md:-right-[6rem]  w-[60%]"
                 alt=""
               />
-              {/* Mobile display this jugaad later fix this */}
+              {/* Mobile display  */}
               <img
                 src={warrior}
                 className=" absolute md:hidden h-[55%]  -right-[5.75rem] bottom-[8.5rem] "
