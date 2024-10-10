@@ -17,7 +17,7 @@ export default function Accommodations() {
   return (
     <>
       <div className="h-screen w-screen bg-[#2A0B44]">
-        <style jsx>{`
+        <style>{`
           .glow {
             text-shadow: 0 0 10px rgba(255, 204, 51, 0.7),
               /* Inner glow */ 0 0 20px rgba(255, 204, 51, 0.5),
