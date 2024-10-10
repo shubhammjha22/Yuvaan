@@ -29,7 +29,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
   return (
     <>
       <motion.div
-        className="relative sm:block sm:backdrop-blur-[0px]  backdrop-blur-[2px] sm:mt-10 mb-3 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
+        className="relative sm:block sm:backdrop-blur-[0px]  backdrop-blur-[2px] -mt-12 -ml-5 sm:mt-10 mb-3 sm:ml-24 z-20 p-10 sm:w-1/2 h-[20rem]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -38,11 +38,11 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
         {/* <motion.img src={first_heading} className="h-32" alt="" /> */}
 
         {backgroundImages[activeImage]?.short == true ? (
-          <motion.h1 className="font-heading  text-3xl  sm:text-3xl w-[24rem] text-white">
+          <motion.h1 className="font-heading  text-2xl  sm:text-3xl sm:w-[24rem] text-white">
             {backgroundImages[activeImage].heading}
           </motion.h1>
         ) : (
-          <motion.h1 className="font-heading text-3xl   sm:text-5xl  text-white">
+          <motion.h1 className="font-heading text-3xl w-[18rem]  sm:text-5xl  text-white">
             {backgroundImages[activeImage].heading}
           </motion.h1>
         )}
@@ -62,7 +62,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
         </motion.p>
 
         <motion.ul
-          className="text-base text-white font-abhaya list-disc list-outside"
+          className="text-sm sm:text-base text-white font-abhaya list-disc list-outside"
           variants={childVariants}
         >
           <motion.li variants={childVariants}>

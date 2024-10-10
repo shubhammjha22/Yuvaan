@@ -34,7 +34,7 @@ function Layout() {
               </span>
             </p>
           </div>
-          <div className="img  w-full max-w-[600px] -mt-10 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
+          <div className="img  w-full max-w-[600px] -mt-6 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
             <img
               src={aftermovie}
               onClick={() =>
