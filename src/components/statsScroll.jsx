@@ -21,7 +21,7 @@ const textContent = [
   },
   {
     title: "Prominent Music Artists (Pronites):",
-    text: "Anuv Jain, Sukhbir, Nizami Brothers, RCR, Vivek Singh Baghel, Rutba Band, Sufinama",
+    text: "Nizami Brothers, RCR, Vivek Singh Baghel, Rutba Band, Sufinama",
   },
   {
     text: "Recently, Yuvaan organized one of India's biggest book launch events for ‘Class of 2006' featuring the renowned actor R. Madhavan.",
