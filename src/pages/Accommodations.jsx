@@ -1,26 +1,54 @@
+import AccommodationBooking from "../components/accomdationBooking";
+import AccommodationHeading from "../components/accomdationHeading";
+import AccommodationInfo from "../components/accomdationInfo";
 import SocialMedia from "../components/socialMedia";
+import website_texture from "/assets/website_texture.png";
 
 const bgUrl =
   "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728498473/Accomm-desktop_hdducr.png";
+
+const url =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1728541279/Accomodation_Website_no_text_2_ttlcsi.png";
 
 export default function Accommodations() {
   return (
     <>
       <div className="h-screen w-screen bg-[#2A0B44]">
-        <section className="flex flex-col justify-evenly sm:block relative h-full overflow-hidden">
+        <style jsx>{`
+          .glow {
+            text-shadow: 0 0 10px rgba(255, 204, 51, 0.7),
+              /* Inner glow */ 0 0 20px rgba(255, 204, 51, 0.5),
+              /* Middle glow */ 0 0 30px rgba(255, 204, 51, 0.4),
+              /* Outer glow */ 0 0 40px rgba(255, 102, 0, 0.3); /* Larger glow */
+          }
+        `}</style>
+
+        <section className="relative h-full overflow-hidden">
           <img
-            src={bgUrl}
+            src={url}
             className="absolute inset-0 z-0 h-[100vh] w-[100vw] -tp-40"
             alt=""
           />
-          <div className="mt-24 relative sm:mt-24 flex flex-col justify-center  items-center">
-            <h1 className="text-8xl   font-abhaya font-extrabold text-[#CA9E57]">
-              ACCOMMODATIONAS
-            </h1>
-            <h3 className="text-5xl -mt-6 font-abhaya font-semibold text-white">
-              AT 7TH EDITION
-            </h3>
-          </div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${website_texture})`, // Texture image (white dots)
+              backgroundSize: "cover", // Ensures the texture covers the entire area
+              backgroundRepeat: "repeat", // Repeats the texture
+              // Adjust the opacity so the gradient shows through
+            }}
+          />
+
+          {/* HEADING */}
+          <AccommodationHeading />
+
+          {/* Accommodation Info */}
+          <AccommodationInfo />
+
+          {/* BOOK TEXT */}
+          <AccommodationBooking />
+
+          {/* <div className="bg-footer-gradient w-full h-1/4 z-10 absolute bottom-0 "></div> */}
 
           <div className="absolute bottom-10 left-16">
             <SocialMedia />
