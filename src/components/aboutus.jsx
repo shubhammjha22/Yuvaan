@@ -6,7 +6,7 @@ const yuvaan_logo_1 =
 export default function About() {
   return (
     <>
-      <div className=" ">
+      <div className="-mt-6 sm:mt-0 ">
         <div className="container xl:px-10 mt-28 mx-auto">
           <div className="h-64  flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col items-start px-4 sm:p-0">
@@ -17,7 +17,7 @@ export default function About() {
                 <span className="sm:hidden">
                   Yuvaan is the official literature and film festival of DTU,
                   which made its debut in 2017, with captive hearts and minds.
-                  Drawing an impressive crowd of over 65,000 attendees, Yuvaan
+                  Drawing an impressive crowd of over 90,000 attendees, Yuvaan
                   stands as one of DTU's most eagerly anticipated literatüre and
                   film events, drawing massive crowds. With its engaging events,
                   including slams, debates, quizzes, Yuvaan offers something for
@@ -29,7 +29,7 @@ export default function About() {
                   Yuvaan is the official literature and film festival of DTU,
                   which made its debut <br /> in 2017, with captive hearts and
                   minds.
-                  <br /> Drawing an impressive crowd of over 65,000 attendees,
+                  <br /> Drawing an impressive crowd of over 90,000 attendees,
                   Yuvaan stands as one <br /> of DTU's most eagerly anticipated
                   literatüre and film events, drawing massive crowds.
                   <br /> With its engaging events, including slams, debates,

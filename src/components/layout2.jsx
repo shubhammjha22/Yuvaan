@@ -14,7 +14,7 @@ function Layout() {
               <span className="sm:hidden z-40 relative">
                 Yuvaan is the official literature and film festival of DTU,
                 which made its debut in 2017, with captive hearts and minds.
-                Drawing an impressive crowd of over 65,000 attendees, Yuvaan
+                Drawing an impressive crowd of over 90,000 attendees, Yuvaan
                 stands as one of DTU's most eagerly anticipated literatüre{" "}
                 <br /> and film events, drawing massive crowds. With its
                 engaging events, including slams, debates, quizzes, Yuvaan
@@ -26,7 +26,7 @@ function Layout() {
                 Yuvaan is the official literature and film festival of DTU,
                 which made its debut <br /> in 2017, with captive hearts and
                 minds.
-                <br /> Drawing an impressive crowd of over 65,000 attendees,
+                <br /> Drawing an impressive crowd of over 90,000 attendees,
                 Yuvaan stands as one <br /> of DTU's most eagerly anticipated
                 literatüre and film events, drawing massive crowds.
                 <br /> With its engaging events, including slams, debates,
