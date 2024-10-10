@@ -9,9 +9,9 @@ const linkedinlogo =
 
 function SocialMedia() {
   return (
-    <div className="flex space-x-8">
+    <div className="flex z-100 space-x-8">
       <a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/yuvaandtu/"
         target="_blank"
         rel="noopener noreferrer"
         className="z-30"
@@ -19,7 +19,7 @@ function SocialMedia() {
         <img src={instagramlogo} alt="Instagram" className="w-8 h-8" />
       </a>
       <a
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/YuvaanDTU/"
         target="_blank"
         rel="noopener noreferrer"
         className="z-30"
@@ -27,7 +27,7 @@ function SocialMedia() {
         <img src={facebooklogo} alt="Facebook" className="w-8 h-8" />
       </a>
       <a
-        href="https://www.youtube.com/"
+        href="https://www.youtube.com/@YuvaanDTU/featured"
         target="_blank"
         rel="noopener noreferrer"
         className="z-30"
@@ -35,7 +35,7 @@ function SocialMedia() {
         <img src={youtubelogo} alt="YouTube" className="w-8 h-8" />
       </a>
       <a
-        href="https://www.linkedin.com/"
+        href="https://in.linkedin.com/company/yuvaandtu"
         target="_blank"
         rel="noopener noreferrer"
         className="z-30"

@@ -80,6 +80,12 @@ const data = [
     imgUrl:
       "https://res.cloudinary.com/derpoctie/image/upload/v1727728615/Rectangle_38_kknqrr.png",
   },
+  {
+    name: "SAHIL YADAV",
+    insta: "https://www.instagram.com/sahil4329/",
+    imgUrl:
+      "https://res.cloudinary.com/derpoctie/image/upload/v1727717000/Sahil_rbghjd.png",
+  },
 ];
 
 export default function Contacts() {
@@ -96,11 +102,7 @@ export default function Contacts() {
             PRESIDENT
           </h1>
           <div className="flex sm:flex-row mt-2 justify-between gap-10 sm:items-center">
-            <ImgCard
-              name="SAHIL YADAV"
-              imgUrl="https://res.cloudinary.com/derpoctie/image/upload/v1727717000/Sahil_rbghjd.png"
-              instaUrl="https://www.instagram.com/sahil4329/"
-            />
+            <ImgCard {...data[13]} />
             <ImgCard {...data[0]} />
           </div>
         </div>

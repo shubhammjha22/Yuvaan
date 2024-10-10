@@ -28,7 +28,7 @@ export default function AboutUs() {
         <Gallery />
 
         <div className="bg-footer-gradient z-10 w-full h-24 absolute bottom-0 "></div>
-        <div className="absolute bottom-10 z-20 left-4 sm:left-16">
+        <div className="absolute bottom-10 mt-10 z-20 left-4 sm:left-16">
           <SocialMedia />
         </div>
       </div>

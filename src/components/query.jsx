@@ -6,7 +6,7 @@ export default function Queries() {
           FOR ANY QUERIES
         </h1>
         <a
-          href="http://whatsapp.com"
+          href="https://chat.whatsapp.com/Bxtn21JPSAQ3Q9zIyyGSzH"
           className="z-20 mb-[10rem] sm:mb-32 bg-[#65249C] rounded-2xl p-2 w-64 flex justify-center items-center"
           target="_blank" // Ensures the link opens in a new tab
           rel="noopener noreferrer"

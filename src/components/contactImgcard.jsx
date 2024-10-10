@@ -9,12 +9,13 @@ export default function ImgCard({ imgUrl, name, insta, heading }) {
           </h2>
           <a
             href={insta}
-            className="h-4 w-4 sm:h-6 sm:w-6 mx-auto mix-blend-difference mb-1 -mt-1"
+            className="h-4 w-4 relative sm:h-6 sm:w-6 mx-auto mix-blend-difference mb-1 -mt-1"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src="https://res.cloudinary.com/derpoctie/image/upload/v1727753745/instagram-logo_wskuia.png"
-              className="relative"
+              className="relative z-40"
               alt=""
             />
           </a>

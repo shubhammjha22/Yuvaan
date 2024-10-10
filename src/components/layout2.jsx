@@ -40,7 +40,8 @@ function Layout() {
               onClick={() =>
                 window.open(
                   "https://www.youtube.com/watch?v=ByrP3KAlXSY",
-                  "_blank"
+                  "_blank",
+                  "noopener,noreferrer"
                 )
               }
               className="z-10 cursor-pointer "

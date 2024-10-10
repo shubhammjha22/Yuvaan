@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { filter } from "framer-motion/client";
 
 const containerVariants = {
   hidden: { opacity: 0, filter: "blur(5px)" },
@@ -26,6 +25,11 @@ const childVariants = {
 };
 
 export default function CompetitionInfo({ backgroundImages, activeImage }) {
+  const handleButtonClick = (link) => {
+    // Open the URL in a new tab with security options to prevent vulnerabilities
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <motion.div
@@ -42,7 +46,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
             {backgroundImages[activeImage].heading}
           </motion.h1>
         ) : (
-          <motion.h1 className="font-heading text-3xl w-[18rem]  sm:text-5xl  text-white">
+          <motion.h1 className="font-heading text-3xl w-[18rem] sm:w-full sm:text-5xl  text-white">
             {backgroundImages[activeImage].heading}
           </motion.h1>
         )}
@@ -82,6 +86,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
         </motion.ul>
 
         <motion.button
+          onClick={() => handleButtonClick(backgroundImages[activeImage].link)}
           className="mt-1 text-base font-abhaya text-white bg-[#CA9E57] rounded-xl py-1 px-3"
           variants={childVariants}
         >
