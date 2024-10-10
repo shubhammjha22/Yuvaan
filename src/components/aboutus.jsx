@@ -1,3 +1,5 @@
+import AnimationEffect from "../util/Animation";
+
 const LFC =
   "https://res.cloudinary.com/derpoctie/image/upload/v1727753747/LFC_2_sfjm0r.png";
 const yuvaan_logo_1 =
@@ -8,7 +10,7 @@ export default function About() {
     <>
       <div className="-mt-6 sm:mt-0 ">
         <div className="container xl:px-10 mt-28 mx-auto">
-          <div className="h-64  flex flex-col lg:flex-row items-center justify-between">
+          <AnimationEffect className="h-64  flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col items-start px-4 sm:p-0">
               <h1 className="text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
                 ABOUT YUVAAN
@@ -43,9 +45,9 @@ export default function About() {
               className="hidden lg:block h-full "
               alt=""
             />
-          </div>
+          </AnimationEffect>
 
-          <div className="h-[18rem] lg:ml-0 -mt-10 sm:mt-10 flex flex-col lg:flex-row items-center justify-between">
+          <AnimationEffect className="h-[18rem] lg:ml-0 -mt-10 sm:mt-10 flex flex-col lg:flex-row items-center justify-between">
             {/* <img
               src={LFC}
               className="hidden sm:block -ml-24 -mr-12  xl:ml-0 xl:mr-0 h-[24rem] mx-0"
@@ -92,7 +94,7 @@ export default function About() {
                 </span>
               </p>
             </div>
-          </div>
+          </AnimationEffect>
         </div>
       </div>
     </>

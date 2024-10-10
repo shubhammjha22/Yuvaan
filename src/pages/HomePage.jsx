@@ -18,13 +18,11 @@ import Theme from "../components/theme.jsx";
 import Stats from "../components/stats.jsx";
 import Clouds from "../components/clouds.jsx";
 import { useEffect } from "react";
+import AnimationEffect from "../util/Animation.jsx";
 
 function HomePage() {
   useEffect(() => {
-    const element = document.getElementById("home");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   return (
@@ -40,6 +38,7 @@ function HomePage() {
           }}
         />
         {/* Hero section */}
+        <AnimationEffect className="relative"></AnimationEffect>
         <section id="home" className="relative ">
           <img
             src={logo}
@@ -84,24 +83,24 @@ function HomePage() {
         {/* CLOUDS */}
         <Clouds />
         {/* Major Events */}
-        <section className="mt-32 relative w-full ">
+        <AnimationEffect className="mt-32 relative w-full ">
           <MajorEvent />
-        </section>
+        </AnimationEffect>
 
         {/* Layout */}
-        <section className="relative">
+        <AnimationEffect className="relative">
           <Layout />
-        </section>
+        </AnimationEffect>
 
         {/* THeme */}
-        <section className=" mt-[2rem]  xl:mt-0 relative">
+        <AnimationEffect className="mt-[2rem]  xl:mt-0 relative">
           <Theme />
-        </section>
-
+        </AnimationEffect>
         {/* Stats */}
-        <section className=" relative">
+
+        <AnimationEffect className="relative">
           <Stats />
-        </section>
+        </AnimationEffect>
       </div>
     </>
   );

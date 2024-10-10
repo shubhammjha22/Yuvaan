@@ -1,7 +1,5 @@
+import AnimationEffect from "../util/Animation";
 import AfterMovie from "./afterMovie";
-
-const demo =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753742/demo_fzapwb.png";
 
 const imgUrl = [
   {
@@ -103,7 +101,7 @@ export default function Gallery() {
 
           <div className="bg-[#000000] z-20 opacity-[21%]  sm:ml-0 w-[95%] sm:w-full xl:w-[95%] p-10 absolute mx-auto h-full xl:h-[94%]    "></div>
           {/* Gallery section */}
-          <div className="z-40 grid grid-cols-3 sm:grid-cols-5 p-4 gap-5 sm:gap-2">
+          <AnimationEffect className="z-40 grid grid-cols-3 sm:grid-cols-5 p-4 gap-5 sm:gap-2">
             {imgUrl.slice(0, 11).map((item) => (
               <img
                 key={item.id}
@@ -144,7 +142,7 @@ export default function Gallery() {
                 alt={item.id}
               />
             ))}
-          </div>
+          </AnimationEffect>
 
           {/* Diff gallery text for different dimension - Look for improvement */}
           <h1 className="hidden sm:block text-3xl absolute top-[62%] sm:top-[50%] translate-y-[-50%] text-center sm:text-[6rem] w-full text-[#CA9E57] z-20 font-abhaya font-bold">

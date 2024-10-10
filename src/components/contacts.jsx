@@ -1,3 +1,4 @@
+import AnimationEffect from "../util/Animation";
 import ImgCard from "./contactImgcard";
 
 const data = [
@@ -97,7 +98,7 @@ export default function Contacts() {
         </h1>
 
         {/* PRESIDENT */}
-        <div className="flex flex-col min-w-[225px] w-[90%] mt-4 sm:mt-0 sm:w-[45%]">
+        <AnimationEffect className="flex flex-col min-w-[225px] w-[90%] mt-4 sm:mt-0 sm:w-[45%]">
           <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             PRESIDENT
           </h1>
@@ -105,11 +106,11 @@ export default function Contacts() {
             <ImgCard {...data[13]} />
             <ImgCard {...data[0]} />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* TREASURER */}
 
-        <div className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
+        <AnimationEffect className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
           <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             TREASURER
           </h1>
@@ -117,11 +118,11 @@ export default function Contacts() {
             <ImgCard {...data[1]} />
             <ImgCard {...data[2]} />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* VICE PRESIDENT */}
 
-        <div className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[65%]">
+        <AnimationEffect className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[65%]">
           <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             VICE PRESIDENT
           </h1>
@@ -135,21 +136,21 @@ export default function Contacts() {
           <div className=" sm:hidden w-[45%] mt-4 mx-auto">
             <ImgCard {...data[5]} />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* Joint Treasurer */}
 
-        <div className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
+        <AnimationEffect className="mt-16 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
           <div className="flex sm:flex-row  mt-2 justify-between gap-16 items-center">
             <ImgCard {...data[6]} heading="JOINT TREASURE" />
 
             <ImgCard {...data[7]} heading="JOINT TREASURE" />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* Directors */}
 
-        <div className="mt-24 flex flex-col min-w-[225px] w-[90%] sm:w-[65%]">
+        <AnimationEffect className="mt-24 flex flex-col min-w-[225px] w-[90%] sm:w-[65%]">
           <div className="flex sm:flex-row  mt-2 justify-between gap-14 sm:gap-24 items-center">
             <ImgCard {...data[8]} heading="DIRECTOR OF DESIGN" />
 
@@ -161,16 +162,16 @@ export default function Contacts() {
           <div className=" sm:hidden w-[45%] mt-20 mx-auto">
             <ImgCard {...data[10]} heading="DIRECTOR OF CREATIVE" />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* Logistics and Outreach */}
-        <div className="mt-24 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
+        <AnimationEffect className="mt-24 flex flex-col min-w-[225px] w-[90%] sm:w-[45%]">
           <div className="flex sm:flex-row mt-2 justify-between gap-16 items-center">
             <ImgCard {...data[11]} heading="DIRECTOR OF LOGISTICS" />
 
             <ImgCard {...data[12]} heading="DIRECTOR OF OUTREACH" />
           </div>
-        </div>
+        </AnimationEffect>
 
         {/* others in future */}
         <div className="m"></div>

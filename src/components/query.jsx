@@ -1,7 +1,9 @@
+import AnimationEffect from "../util/Animation";
+
 export default function Queries() {
   return (
     <>
-      <div className="mt-32 sm:mt-24 flex justify-center items-center flex-col">
+      <AnimationEffect className="mt-32 sm:mt-24 flex justify-center items-center flex-col">
         <h1 className="text-[32px] sm:text-[70px] opacity-70  text-white font-abhaya font-extrabold">
           FOR ANY QUERIES
         </h1>
@@ -21,7 +23,7 @@ export default function Queries() {
             JOIN GROUP
           </h1>
         </a>
-      </div>
+      </AnimationEffect>
     </>
   );
 }
