@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 const globe =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753744/globe_fnvhwn.png";
 const demo =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753742/demo_fzapwb.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/v1728530567/Frame_39_1_cq3tpu.png";
 
 function MajorEvent() {
   return (
@@ -39,7 +39,7 @@ function MajorEvent() {
                 <img
                   src={demo}
                   alt={`Image ${index + 1}`}
-                  className="w-full h-[60%] object-cover rounded-lg shadow-md "
+                  className=" w-full h-[60%] object-cover rounded-lg shadow-md "
                 />
               </div>
             ))}
