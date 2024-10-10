@@ -10,6 +10,9 @@ const bgUrl =
 const url =
   "https://res.cloudinary.com/derpoctie/image/upload/v1728541279/Accomodation_Website_no_text_2_ttlcsi.png";
 
+const url2 =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1728549586/Accomodation_425_x_862_px_no_text_no_dot_ta1ybn.png";
+
 export default function Accommodations() {
   return (
     <>
@@ -48,7 +51,7 @@ export default function Accommodations() {
           {/* BOOK TEXT */}
           <AccommodationBooking />
 
-          {/* <div className="bg-footer-gradient w-full h-1/4 z-10 absolute bottom-0 "></div> */}
+          <div className="bg-footer-gradient w-full h-1/4 z-10 absolute bottom-0 "></div>
 
           <div className="absolute bottom-10 left-16">
             <SocialMedia />
