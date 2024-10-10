@@ -18,12 +18,14 @@ import AboutUs from "./pages/AboutUs";
 import Sponsors from "./pages/Sponsors";
 import Passes from "./pages/Passes";
 import Accommodations from "./pages/Accommodations";
+import ErrorPage from "./pages/ErrorPage";
+import ErrorBoundary from "./pages/ErrorBoundary";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
-    // errorElement: <ComingSoon />,
+    errorElement: <ErrorBoundary />,
     children: [
       {
         index: true,
@@ -60,7 +62,7 @@ const router = createBrowserRouter([
       // Catch-all route for undefined paths
       {
         path: "*",
-        element: <Navigate to="/" />,
+        element: <ErrorPage />,
       },
     ],
   },
