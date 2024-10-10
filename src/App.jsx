@@ -1,17 +1,8 @@
-import {
-  Navigate,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
-// Speed n Analytics components
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
-
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // Pages
 import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/HomePage";
 import EventsRoot from "./pages/EventsRoot";
-import ComingSoon from "./pages/ComingSoon";
 import Competition from "./pages/Competition";
 import ContantUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
@@ -72,8 +63,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <SpeedInsights />
-      <Analytics />
     </>
   );
 }
