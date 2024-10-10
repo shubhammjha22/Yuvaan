@@ -2,6 +2,8 @@ import { useRouteError } from "react-router-dom";
 import website_texture from "/assets/website_texture.png";
 import SocialMedia from "../components/socialMedia";
 import Navbar from "../components/Navbar";
+const yuvaan_logo_1 =
+  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
 
 export default function ErrorBoundary() {
   const error = useRouteError();
@@ -21,6 +23,11 @@ export default function ErrorBoundary() {
           }}
         />
         <div className="h-[100vh] flex flex-col justify-center items-center">
+          <img
+            src={yuvaan_logo_1}
+            className="absolute  z-10 h-1/2 opacity-20"
+            alt=""
+          />
           <h1 className="text-5xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  ">
             Oops! Something went wrong.
           </h1>
