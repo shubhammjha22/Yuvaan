@@ -29,6 +29,15 @@ export default function ContantUs() {
         {/* DGM */}
         <Queries />
 
+        <div className="hidden sm:block">
+          <div className="bg-[#65249C] absolute -bottom-0 -left-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+          <div className="bg-[#65249C] absolute top-0 -right-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+          <div className="bg-[#65249C] absolute top-[10%] -left-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+          <div className="bg-[#65249C] absolute top-[30%] -right-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+          <div className="bg-[#65249C] absolute top-[50%] -left-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+          <div className="bg-[#65249C] absolute top-[70%] -right-[18rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+        </div>
+
         <div className="absolute bottom-10 left-4 sm:left-16">
           <SocialMedia />
         </div>
