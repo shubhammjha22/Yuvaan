@@ -77,10 +77,10 @@ export default function PassesImg({ passes_img }) {
         <h1 className="text-white text-center heading-shadow text-4xl sm:text-[55px] mt-6 font-heading text-shadow">
           EARLY BIRD REGISTRATION
         </h1>
-        <p className="text-white text-center text-3xl sm:text-5xl -mt-2 -mb-2 font-passesFont">
+        <p className="text-white text-center text-3xl sm:text-4xl mt-1 -mb-2 font-montserrat">
           FOR
         </p>
-        <h2 className="text-white opacity-80 drop-shadow-2xl text-center text-4xl sm:text-7xl font-montserrat ">
+        <h2 className="text-white opacity-80 drop-shadow-2xl text-center text-4xl sm:text-7xl sm:text-[70px] font-montserrat font-semibold">
           DAY 1, 2 AND 3
         </h2>
       </div>
