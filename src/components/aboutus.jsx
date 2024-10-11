@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <div className="-mt-6 sm:mt-0 ">
-        <div className="container  w-[90vw] xl:px-[2rem] mt-28 mx-auto">
+        <div className="container  sm:w-[90vw] xl:px-[2rem] mt-28 mx-auto">
           <AnimationEffect className="h-64  flex flex-col lg:flex-row items-center justify-between">
             <div className="flex flex-col items-star px-4 sm:p-0">
               <h1 className="text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
