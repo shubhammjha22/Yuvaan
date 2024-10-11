@@ -38,7 +38,7 @@ export default function Passes() {
             // Adjust the opacity so the gradient shows through
           }}
         />
-        <div className="sm:h-[80vh] w-[75vw] mx-auto mt-24 sm:mt-32 gap-10 flex flex-col sm:flex-row justify-center items-center ">
+        <div className="sm:h-[80vh] w-[75vw] mx-auto mt-24 sm:mt-26 gap-10 flex flex-col sm:flex-row justify-center items-center ">
           {/* IMAGE CONTAINER */}
           {/* DAY 1 */}
           <PassesImg passes_img={passes_Day1} />
@@ -52,7 +52,7 @@ export default function Passes() {
 
         {/* spacing */}
         <div className="h-[18vh]" />
-        <div className="bg-footer-gradient w-full h-1/4  absolute -bottom-10 "></div>
+        <div className="bg-footer-gradient w-full h-40 sm:h-1/4 z-10  absolute -bottom-10 "></div>
         <div className="absolute bottom-10 left-16">
           <SocialMedia />
         </div>
