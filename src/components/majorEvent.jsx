@@ -26,7 +26,7 @@ function MajorEvent() {
         </motion.div>
       </div>
       <div className="ml-0 mt-44 xl:mb-10  xl:max-w-[80vw] xl:ml-60  xl:mt-24 p-0">
-        <h1 className="text-5xl xl:ml-10 text-center xl:text-left sm:text-6xl  xl:mt-0 text-[#CA9E57] font-abhaya font-bold  mb-10">
+        <h1 className="text-5xl xl:ml-16 text-center xl:text-left sm:text-6xl  xl:mt-0 text-[#CA9E57] font-abhaya font-bold  mb-10">
           MAJOR EVENTS
         </h1>
         <div className="-mt-14 xl:-mt-10 z-20 flex xl:mr-10 ">
