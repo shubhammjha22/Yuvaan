@@ -9,9 +9,9 @@ export default function About() {
   return (
     <>
       <div className="-mt-6 sm:mt-0 ">
-        <div className="container xl:px-10 mt-28 mx-auto">
+        <div className="container  w-[90vw] xl:px-[2rem] mt-28 mx-auto">
           <AnimationEffect className="h-64  flex flex-col lg:flex-row items-center justify-between">
-            <div className="flex flex-col items-start px-4 sm:p-0">
+            <div className="flex flex-col items-star px-4 sm:p-0">
               <h1 className="text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
                 ABOUT YUVAAN
               </h1>
@@ -42,7 +42,7 @@ export default function About() {
             </div>
             <img
               src={yuvaan_logo_1}
-              className="hidden lg:block h-full "
+              className="hidden  lg:block h-full "
               alt=""
             />
           </AnimationEffect>
@@ -53,8 +53,8 @@ export default function About() {
               className="hidden sm:block -ml-24 -mr-12  xl:ml-0 xl:mr-0 h-[24rem] mx-0"
               alt=""
             /> */}
-            <img src={LFC} className=" -mr-14 hidden lg:block h-full" alt="" />
-            <div className="flex flex-col items-end px-3 sm:p-0">
+            <img src={LFC} className="-mr-14 hidden lg:block h-[140%]" alt="" />
+            <div className="flex flex-col items-end px-3 sm:px-0">
               <h1 className="relative mr-2 sm:mr-0 text-3xl sm:text-5xl  text-[#CA9E57] font-abhaya font-bold  mb-0">
                 ABOUT LFC
                 <span>
