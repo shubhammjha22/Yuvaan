@@ -31,7 +31,7 @@ export default function AfterMovie() {
   }, []);
 
   return (
-    <div className="bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40 container mx-auto">
+    <div className="relative bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40 container mx-auto">
       <h1 className="text-2xl sm:text-6xl text-[#CA9E57] font-abhaya font-bold mb-0">
         AFTER MOVIE
       </h1>
@@ -63,6 +63,11 @@ export default function AfterMovie() {
             tabIndex="0" // Makes it focusable // Click to play video
           />
         )}
+      </div>
+
+      <div className="hidden sm:block">
+        <div className="bg-[#65249C] absolute -bottom-24 -left-[25rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+        <div className="bg-[#65249C] absolute -top-24 -right-[25rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
       </div>
     </div>
   );
