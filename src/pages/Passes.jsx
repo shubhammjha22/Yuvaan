@@ -2,7 +2,8 @@ import website_texture from "/assets/website_texture.png";
 import SocialMedia from "../components/socialMedia";
 import PassesImg from "../components/passesImg";
 const passes_Day1 =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1728623978/ENTRY_PASS-tiny_qzaf0z.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728631572/ENTRY_PASS-notext-tiny_yny7nh.png";
+
 export default function Passes() {
   return (
     <>
@@ -58,16 +59,20 @@ export default function Passes() {
             // Adjust the opacity so the gradient shows through
           }}
         />
-        <div className="sm:h-[80vh] w-[75vw] mx-auto mt-24 sm:mt-26 gap-10 flex flex-col sm:flex-row justify-center items-center ">
+        <div className="sm:h-[80vh] w-[90vw] sm:w-[75vw] mx-auto mt-24 sm:mt-26 gap-10 flex flex-col sm:flex-row justify-center items-center relative z-40">
           {/* IMAGE CONTAINER */}
           {/* DAY 1 */}
           <PassesImg passes_img={passes_Day1} />
         </div>
 
         {/* spacing */}
+
+        <div className="bg-[#65249C] absolute bottom-12 -left-[18rem] z-10 bg-opacity-[17%] h-[505px] w-[505px] rounded-full"></div>
+        <div className="bg-[#65249C] absolute top-12 -right-[18rem] z-10 bg-opacity-[17%] h-[505px] w-[505px] rounded-full"></div>
+
         <div className="h-[18vh]" />
         <div className="bg-footer-gradient w-full h-40 sm:h-1/4 z-10  absolute -bottom-10 "></div>
-        <div className="absolute bottom-10 left-16">
+        <div className="absolute bottom-10 left-4 sm:left-16">
           <SocialMedia />
         </div>
       </div>
