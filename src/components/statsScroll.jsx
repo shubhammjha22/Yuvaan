@@ -28,6 +28,7 @@ const textContent = [
   },
   {
     title: "FOOTFALL - 90,000+",
+    big: true,
   },
 ];
 
@@ -54,7 +55,11 @@ export default function StatsScroll() {
         transition={{ duration: 0.5 }} // Duration of each transition
         className="leading-tight h-20 z-20 text-sm sm:text-xl w-[17rem] sm:w-[46rem] text-white font-abhaya mt-4 mb-24 sm:mt-4 sm:font-lg"
       >
-        <b className="text-xl mb-0 sm:text-3xl">{textContent[index].title}</b>{" "}
+        {textContent[index]?.big ? (
+          <b className="text-xl mb-0 sm:text-5xl">{textContent[index].title}</b>
+        ) : (
+          <b className="text-xl mb-0 sm:text-3xl">{textContent[index].title}</b>
+        )}
         <br />
         {textContent[index].text}
         <br />
