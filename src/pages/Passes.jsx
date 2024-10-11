@@ -50,12 +50,17 @@ export default function Passes() {
           <PassesImg
             passes_img={passes_Day1}
             backgroundImage={
-              "linear-gradient(to bottom, #FD9AF1 0%, #612F5B 50%, #612F5B 100%)"
+              "linear-gradient(to bottom, #502F61 0%, #502F61 50%, #8E41B6 100%)"
             }
           />
 
           {/* DAY  2 */}
-          <PassesImg passes_img={passes_Day2} />
+          <PassesImg
+            passes_img={passes_Day2}
+            backgroundImage={
+              "linear-gradient(to bottom, #61422F 0%, #61422F 50%, #896F23 100%)"
+            }
+          />
 
           {/* DAY 3 */}
           <PassesImg
@@ -69,7 +74,7 @@ export default function Passes() {
         {/* spacing */}
         <div className="h-[18vh]" />
         <div className="bg-footer-gradient w-full h-40 sm:h-1/4 z-10  absolute -bottom-10 "></div>
-        <div className="absolute bottom-10 left-16">
+        <div className="absolute bottom-10 left-6 sm:left-16">
           <SocialMedia />
         </div>
       </div>
