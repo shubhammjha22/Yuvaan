@@ -60,7 +60,7 @@ export default function Accommodations() {
           {/* BOOK TEXT */}
           <AccommodationBooking />
 
-          <div className="bg-footer-gradient w-full h-1/4 z-10 absolute bottom-0 "></div>
+          <div className="bg-footer-gradient w-full h-1/5 sm:h-1/4 z-10 absolute bottom-0 "></div>
 
           <div className="absolute bottom-10 left-2 sm:left-16">
             <SocialMedia />
