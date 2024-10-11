@@ -31,7 +31,7 @@ export default function AfterMovie() {
   }, []);
 
   return (
-    <div className="bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40 container mx-auto">
+    <div className="relative bg-re-400 mt-10 mb-[7rem] flex flex-col justify-center items-center z-40 container mx-auto">
       <h1 className="text-2xl sm:text-6xl text-[#CA9E57] font-abhaya font-bold mb-0">
         AFTER MOVIE
       </h1>
