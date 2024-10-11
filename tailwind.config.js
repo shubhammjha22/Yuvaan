@@ -17,6 +17,7 @@ export default {
         abhaya: ['"Abhaya Libre"', "serif"],
         cormorant: ["Cormorant Garamond", "serif"],
         heading: ["Heading", "sans-serif"],
+        passesFont: ["PassesFont", "sans-serif"],
       },
     },
   },

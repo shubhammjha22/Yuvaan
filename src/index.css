@@ -16,6 +16,13 @@
     font-style: normal;  /* You can specify different styles if needed */
   };
 
+@font-face {
+    font-family: 'PassesFont';
+    src: url('./fonts/RoboltxVintage.ttf') format('truetype');
+    font-weight: normal; /* You can specify different weights if needed */
+    font-style: normal;  /* You can specify different styles if needed */
+  };
+
 
 
 /* Smooth scrolling */
