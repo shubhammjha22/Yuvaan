@@ -54,7 +54,7 @@ const data = [
     name: "HARSH SHARMA",
     insta: "https://www.instagram.com/harsh.shrmaaa/",
     imgUrl:
-      "https://res.cloudinary.com/derpoctie/image/upload/v1727728610/Rectangle_39_no1nov.png",
+      "https://res.cloudinary.com/derpoctie/image/upload/v1728670579/harsh_sharma-tiny_cc5mux.png",
   },
 
   {
