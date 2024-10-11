@@ -145,10 +145,10 @@ export default function Gallery() {
           </AnimationEffect>
 
           {/* Diff gallery text for different dimension - Look for improvement */}
-          <h1 className="hidden sm:block text-3xl absolute top-[62%] sm:top-[50%] translate-y-[-50%] text-center sm:text-[6rem] w-full text-[#CA9E57] z-20 font-abhaya font-bold">
+          <h1 className="hidden sm:block text-3xl absolute top-[62%] sm:top-[50%] translate-y-[-50%] text-center sm:text-[6rem] w-full text-[#CA9E57] z-20 font-heading ">
             GALLERY
           </h1>
-          <h1 className="flex sm:hidden flex-col text-3xl absolute top-[62%] translate-y-[-50%] text-center  w-full text-[#CA9E57] z-20 font-abhaya font-bold">
+          <h1 className="flex sm:hidden flex-col text-3xl absolute top-[62%] translate-y-[-50%] text-center  w-full text-[#CA9E57] z-20 font-heading ">
             <span>G</span>
             <span className="-mt-2">A</span>
             <span className="-mt-2">L</span>

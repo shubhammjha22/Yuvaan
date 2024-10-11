@@ -18,6 +18,7 @@ export default {
         cormorant: ["Cormorant Garamond", "serif"],
         heading: ["Heading", "sans-serif"],
         passesFont: ["PassesFont", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

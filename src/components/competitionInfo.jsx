@@ -59,14 +59,14 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
         </motion.h2>
 
         <motion.p
-          className="sm:w-[38rem] text-sm sm:text-base font-abhaya text-white"
+          className="sm:w-[38rem] text-sm sm:text-base font- text-white"
           variants={childVariants}
         >
           {backgroundImages[activeImage].description}
         </motion.p>
 
         <motion.ul
-          className="text-sm sm:text-base text-white font-abhaya list-disc list-outside"
+          className="text-sm sm:text-base text-white  list-disc list-outside"
           variants={childVariants}
         >
           <motion.li variants={childVariants}>
@@ -89,6 +89,9 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
           onClick={() => handleButtonClick(backgroundImages[activeImage].link)}
           className="mt-1 text-base font-abhaya text-white bg-[#CA9E57] rounded-xl py-1 px-3"
           variants={childVariants}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.1 }}
         >
           REGISTER
         </motion.button>

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 const passes_img2 =
   "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728632414/ENTRY_PASS_mobile_no_text-tiny_rmbzg9.png";
 
+const url = "";
+
 export default function PassesImg({ passes_img }) {
   const handleMouseMove = (e) => {
     const { left, top, width, height } =
@@ -55,7 +57,7 @@ export default function PassesImg({ passes_img }) {
       }}
     >
       {/* Large screen */}
-      <div className="hidden sm:block">
+      <div className="hidden h-full w-full sm:block">
         <img
           src={passes_img}
           className="h-[70vh] sm:h-full sm:w-full  z-50"
@@ -75,10 +77,10 @@ export default function PassesImg({ passes_img }) {
         <h1 className="text-white text-center heading-shadow text-4xl sm:text-[55px] mt-6 font-heading text-shadow">
           EARLY BIRD REGISTRATION
         </h1>
-        <p className="text-white text-center text-3xl sm:text-5xl -mt-2 -mb-3 font-passesFont">
+        <p className="text-white text-center text-3xl sm:text-5xl -mt-2 -mb-2 font-passesFont">
           FOR
         </p>
-        <h2 className="text-white opacity-80 drop-shadow-2xl text-center text-4xl sm:text-[88px] font-passesFont ">
+        <h2 className="text-white opacity-80 drop-shadow-2xl text-center text-4xl sm:text-7xl font-montserrat ">
           DAY 1, 2 AND 3
         </h2>
       </div>
@@ -89,6 +91,7 @@ export default function PassesImg({ passes_img }) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.1 }} // Faster button animation
+          // onClick={() => window.open(url, "_blank", "noopener,noreferrer")}
         >
           REGISTER FOR EVENT
         </motion.button>

@@ -65,7 +65,7 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
               <img
                 src={img}
                 alt={`movie ${index}`}
-                className={`relative w-full h-full sm:w-[13rem] sm:h-[14rem] hover:cursor-pointer transition-opacity duration-300 ${
+                className={`relative w-full h-full sm:w-[13rem] sm:h-[14rem] hover:cursor-pointer transition-all ease-in  hover:opacity-100 hover:scale-105 active:scale-95 active:duration-100  duration-300 ${
                   index === activeImage ? "opacity-[100%]" : "opacity-[60%]"
                 }  `}
                 onClick={() => handleImageClick(index)}
