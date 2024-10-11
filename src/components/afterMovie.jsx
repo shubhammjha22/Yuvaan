@@ -66,8 +66,8 @@ export default function AfterMovie() {
       </div>
 
       <div className="hidden sm:block">
-        <div className="bg-[#65249C] absolute -bottom-24 -left-[25rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
-        <div className="bg-[#65249C] absolute -top-24 -right-[25rem] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+        <div className="bg-[#65249C] absolute -bottom-24 -left-[40vh] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
+        <div className="bg-[#65249C] absolute -top-24 -right-[40vh] z-10 bg-opacity-[17%] h-[455px] w-[455px] rounded-full"></div>
       </div>
     </div>
   );
