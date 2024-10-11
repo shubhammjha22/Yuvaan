@@ -26,7 +26,13 @@ export default function Passes() {
 
             .box-3d:hover {
                  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg) rotateZ(0deg) translateY(-5px);
-            }`}
+            }
+            
+            .button-bg {
+
+            }
+            
+            `}
         </style>
 
         <div
@@ -41,13 +47,23 @@ export default function Passes() {
         <div className="sm:h-[80vh] w-[75vw] mx-auto mt-24 sm:mt-26 gap-10 flex flex-col sm:flex-row justify-center items-center ">
           {/* IMAGE CONTAINER */}
           {/* DAY 1 */}
-          <PassesImg passes_img={passes_Day1} />
+          <PassesImg
+            passes_img={passes_Day1}
+            backgroundImage={
+              "linear-gradient(to bottom, #FD9AF1 0%, #612F5B 50%, #612F5B 100%)"
+            }
+          />
 
           {/* DAY  2 */}
           <PassesImg passes_img={passes_Day2} />
 
           {/* DAY 3 */}
-          <PassesImg passes_img={passes_Day3} />
+          <PassesImg
+            passes_img={passes_Day3}
+            backgroundImage={
+              "linear-gradient(to bottom, #FD9AF1 0%, #612F5B 50%, #612F5B 100%)"
+            }
+          />
         </div>
 
         {/* spacing */}

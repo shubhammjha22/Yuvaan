@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function PassesImg({ passes_img }) {
+export default function PassesImg({ passes_img, backgroundImage }) {
   const handleMouseMove = (e) => {
     const { left, top, width, height } =
       e.currentTarget.getBoundingClientRect();
@@ -52,11 +52,12 @@ export default function PassesImg({ passes_img }) {
       }}
     >
       <img src={passes_img} className="h-full w-full z-50" alt="" />
-      <div className="absolute bottom-10 z-40 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-6 sm:bottom-8 z-40 w-full flex justify-center">
         <motion.button
-          className="bg-purple-600 text-white px-4 py-2 rounded-full font-bold"
+          className=" text-white text-lg sm:text-3xl w-[70%]  font-heading py-2 rounded-xl "
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          style={{ backgroundImage }}
           transition={{ duration: 0.1 }} // Faster button animation
         >
           GRAB NOW
