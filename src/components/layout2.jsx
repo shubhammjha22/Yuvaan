@@ -46,6 +46,7 @@ function Layout() {
               }
               className="z-30 cursor-pointer transition-all duration-300 ease-out hover:scale-105 "
               alt=""
+              loading="lazy"
             />
           </div>
         </div>

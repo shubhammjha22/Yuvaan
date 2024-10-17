@@ -108,6 +108,7 @@ export default function Gallery() {
                 src={item.url}
                 className="aspect-square relative "
                 alt={item.id}
+                loading="lazy"
               />
             ))}
 
@@ -122,6 +123,7 @@ export default function Gallery() {
                 src={item.url}
                 className="aspect-square"
                 alt={item.id}
+                loading="lazy"
               />
             ))}
             <span className="inline sm:hidden" />
@@ -131,6 +133,7 @@ export default function Gallery() {
                 src={item.url}
                 className="aspect-square"
                 alt={item.id}
+                loading="lazy"
               />
             ))}
             <span className="inline sm:hidden" />
@@ -140,6 +143,7 @@ export default function Gallery() {
                 src={item.url}
                 className="aspect-square"
                 alt={item.id}
+                loading="lazy"
               />
             ))}
           </AnimationEffect>

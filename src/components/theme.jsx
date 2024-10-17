@@ -25,6 +25,7 @@ export default function Theme() {
               src={realms}
               className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
               alt=""
+              loading="lazy"
             />
           </motion.div>
         </div>

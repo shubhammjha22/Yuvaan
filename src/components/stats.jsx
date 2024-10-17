@@ -16,7 +16,7 @@ export default function Stats() {
       </div>
 
       <div className="img w-[35rem] sm:w-[72vw] absolute -ml-[10rem] -mt-24 sm:-ml-[28rem] sm:mt-[1.5rem] sm:relative flex">
-        <img src={soldier} className="sm:relative z-10" alt="" />
+        <img src={soldier} className="sm:relative z-10" alt="" loading="lazy" />
       </div>
     </div>
   );

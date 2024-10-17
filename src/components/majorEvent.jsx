@@ -22,6 +22,7 @@ function MajorEvent() {
             src={globe}
             alt="Globe"
             className="w-full h-full object-cover rounded-full"
+            loading="lazy"
           />
         </motion.div>
       </div>
@@ -40,6 +41,7 @@ function MajorEvent() {
                   src={demo}
                   alt={`Image ${index + 1}`}
                   className=" w-full h-[60%] saturate-[80%] rounded-lg shadow-md "
+                  loading="lazy"
                 />
               </div>
             ))}
