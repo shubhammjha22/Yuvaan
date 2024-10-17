@@ -79,7 +79,7 @@ const backgroundImages = [
       "Flaunt your mastery of Indian Classical Dance at our event. Perform any of the eight recognized forms or their fusion, set to traditional musice only",
     date: "19th October",
     venue: "B.R. Auditorum",
-    cash: "10K",
+    cash: "15K",
     link: "https://unstop.com/p/duet-and-group-classical-competition-yuvaan-7th-edition-literature-and-film-council-dtu-yuvaan-1172645",
     url: "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728492167/DUET_AND_GROUP_CLASSICAL_COMPETITION_qdwjcj.png",
   },
