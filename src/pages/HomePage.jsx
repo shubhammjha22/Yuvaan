@@ -32,7 +32,10 @@ function HomePage() {
           <img
             src="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729148493/hero-phone-tiny_cdiidg.png"
             alt="hero-section"
-            className="block sm:hidden w-full h-full absolute -top-8 "
+            className="block sm:hidden w-full h-full absolute -top-8"
+            srcSet="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729148493/hero-phone-tiny_cdiidg.png 600w,
+                    https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729148493/hero-phone-tiny_cdiidg.png 1200w"
+            sizes="(max-width: 600px) 600px, 1200px"
             fetchpriority="high"
           />
 
