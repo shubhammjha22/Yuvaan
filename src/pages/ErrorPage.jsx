@@ -1,5 +1,5 @@
 const yuvaan_logo_1 =
-  "https://res.cloudinary.com/derpoctie/image/upload/qu_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
+  "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 export default function ErrorPage() {
   return (

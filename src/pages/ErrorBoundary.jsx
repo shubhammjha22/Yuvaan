@@ -3,7 +3,7 @@ import website_texture from "/assets/website_texture.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 const yuvaan_logo_1 =
-  "https://res.cloudinary.com/derpoctie/image/upload/qu_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
+  "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 export default function ErrorBoundary() {
   const error = useRouteError();
