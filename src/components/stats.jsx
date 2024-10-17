@@ -13,10 +13,6 @@ export default function Stats() {
         </h1>
 
         <StatsScroll />
-
-        <div className="absolute bottom-0 sm:bottom-10 w-[16rem] h-[3rem] ">
-          <SocialMedia />
-        </div>
       </div>
 
       <div className="img w-[35rem] sm:w-[72vw] absolute -ml-[10rem] -mt-24 sm:-ml-[28rem] sm:mt-[1.5rem] sm:relative flex">

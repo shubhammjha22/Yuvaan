@@ -1,5 +1,5 @@
 const logo =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753761/yuvaan_logo_1_hzzjqe.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";

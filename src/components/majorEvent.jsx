@@ -11,7 +11,7 @@ function MajorEvent() {
         <motion.div
           animate={{ rotateZ: 360 }}
           transition={{
-            duration: 8, // Adjust the rotation duration as needed
+            duration: 12, // Adjust the rotation duration as needed
             ease: "linear",
             repeat: Infinity,
             repeatType: "loop",

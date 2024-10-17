@@ -1,9 +1,9 @@
 import { useRouteError } from "react-router-dom";
 import website_texture from "/assets/website_texture.png";
-import SocialMedia from "../components/socialMedia";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 const yuvaan_logo_1 =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/qu_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 export default function ErrorBoundary() {
   const error = useRouteError();
@@ -36,9 +36,7 @@ export default function ErrorBoundary() {
           </h2> */}
         </div>
         <div className="bg-footer-gradient w-full h-1/3 absolute bottom-0 "></div>
-        <div className="absolute bottom-10 left-16">
-          <SocialMedia />
-        </div>
+        <Footer />
       </div>
     </>
   );

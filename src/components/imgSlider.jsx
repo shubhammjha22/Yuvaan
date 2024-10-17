@@ -34,7 +34,25 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
     swipeToSlide: true,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -67,7 +85,12 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
   return (
     <>
       <div className="relative w-[55%] -mt-12  mb-10 sm:-mt-0 sm:mb-0 sm:w-[90%]  mx-auto   sm:overflow-hidden">
-        <Slider className="sm:w-[95vw]" ref={sliderRef} {...settings}>
+        <Slider
+          lazyLoad="progressive"
+          className="sm:w-[95vw]"
+          ref={sliderRef}
+          {...settings}
+        >
           {images.map((img, index) => (
             <div className=" relative h-full w-full" key={index}>
               <img

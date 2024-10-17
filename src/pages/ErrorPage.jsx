@@ -1,21 +1,10 @@
-import website_texture from "/assets/website_texture.png";
-import SocialMedia from "../components/socialMedia";
 const yuvaan_logo_1 =
-  "https://res.cloudinary.com/derpoctie/image/upload/v1727753761/yuvaan_logo_1_hzzjqe.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/qu_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 export default function ErrorPage() {
   return (
     <>
       <div className="relative h-[100vh]   overflow-x-hidden bg-[#2A0B44]">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url(${website_texture})`, // Texture image (white dots)
-            backgroundSize: "cover", // Ensures the texture covers the entire area
-            backgroundRepeat: "repeat", // Repeats the texture
-            // Adjust the opacity so the gradient shows through
-          }}
-        />
         <div className="h-[100vh] flex flex-col justify-center items-center">
           <img
             src={yuvaan_logo_1}
@@ -30,9 +19,6 @@ export default function ErrorPage() {
           </h2> */}
         </div>
         <div className="bg-footer-gradient w-full h-1/3 absolute bottom-0 "></div>
-        <div className="absolute bottom-10 left-16">
-          <SocialMedia />
-        </div>
       </div>
     </>
   );

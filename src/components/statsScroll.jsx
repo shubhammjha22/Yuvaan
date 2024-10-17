@@ -56,7 +56,9 @@ export default function StatsScroll() {
         className="leading-tight h-20 z-20 text-sm sm:text-xl w-[17rem] sm:w-[46rem] text-white font-abhaya mt-4 mb-24 sm:mt-4 sm:font-lg"
       >
         {textContent[index]?.big ? (
-          <b className="text-xl mb-0 sm:text-5xl">{textContent[index].title}</b>
+          <b className="text-2xl mb-0 sm:text-5xl">
+            {textContent[index].title}
+          </b>
         ) : (
           <b className="text-xl mb-0 sm:text-3xl">{textContent[index].title}</b>
         )}

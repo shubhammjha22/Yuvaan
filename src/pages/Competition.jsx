@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-import SocialMedia from "../components/socialMedia";
 import ImageSlider from "../components/imgSlider";
 import CompetitionInfo from "../components/competitionInfo";
 
@@ -179,7 +177,7 @@ export default function Competition() {
 
   return (
     <>
-      <div className="h-full w-screen bg-[#2A0B44]">
+      <div className="h-full z-20 relative w-screen bg-[#2A0B44]">
         {/* Hero section */}
         <section className="flex flex-col justify-evenly sm:block relative h-[100vh] overflow-hidden">
           <img
@@ -203,9 +201,6 @@ export default function Competition() {
         </section>
 
         <div className="bg-footer-gradient w-full h-1/4 absolute bottom-0 "></div>
-        <div className="absolute bottom-10 left-6 sm:left-16">
-          <SocialMedia />
-        </div>
       </div>
     </>
   );

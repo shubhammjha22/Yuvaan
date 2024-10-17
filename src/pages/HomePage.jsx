@@ -1,16 +1,8 @@
 // images from cloudinary
-const website_texture =
-  "https://res.cloudinary.com/derpoctie/image/upload/q_auto/v1727753755/website_texture_w3rlkw.png";
-const logo =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753762/Artboard_npkppl.png";
-const warrior =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/char1_k1inyc.png";
 const yuvaan =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753759/yuvaan_eqrtys.png";
 const dates =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/dates-1_kealsq.png";
-const moon =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753750/moon_kfs0bi.png";
 
 import MajorEvent from "../components/majorEvent.jsx";
 import Layout from "../components/layout2.jsx";
@@ -28,62 +20,38 @@ function HomePage() {
   return (
     <>
       <div className="relative  overflow-hidden bg-custom-gradient-0">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url(${website_texture})`, // Texture image (white dots)
-            backgroundSize: "cover", // Ensures the texture covers the entire area
-            backgroundRepeat: "repeat", // Repeats the texture
-            // Adjust the opacity so the gradient shows through
-          }}
-        />
         {/* Hero section */}
-        <AnimationEffect className="relative"></AnimationEffect>
-        <section id="home" className="relative ">
+
+        <section id="home" className="z-20 relative w-[100vw] h-screen ">
           <img
-            src={logo}
-            className="absolute top-0 -ml-[90%] h-[100%] md:ml-0 inset-0 min-w-[500vw] md:min-w-full md:h-[100vh]  mix-blend-overlay "
-            alt=""
+            src="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729146017/hero-tiny_neu6sl.png"
+            alt="hero-section"
+            className=" hidden  sm:block w-full h-full absolute -top-6 brightness-[120%]"
           />
           <img
-            src={moon}
-            className="absolute hidden sm:block -top-8 left-[70rem] h-[54rem]    mix-blend-overlay "
-            alt=""
+            src="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729148493/hero-phone-tiny_cdiidg.png"
+            alt="hero-section"
+            className="block sm:hidden w-full h-full absolute -top-8 "
           />
-          <div className="h-[100vh] w-[100vw] flex gap-10">
-            <div className="w-[140rem] md:w-[70%] flex flex-col  relative">
-              <img
-                src={yuvaan}
-                className="absolute w-[full] top-[6.5rem] md:top-20 md:-right-[4rem] md:w-[925px]"
-                alt=""
-              />
-              <img
-                src={dates}
-                className="absolute right-24 bottom-[22rem]  lg:bottom-[9rem] md:-right-[6rem]  w-[60%]"
-                alt=""
-              />
-              {/* Mobile display  */}
-              <img
-                src={warrior}
-                className=" absolute md:hidden h-[55%]  -right-[5.75rem] bottom-[8.5rem] "
-                alt=""
-              />
-            </div>
-            <div className="w-[90vw] relative">
-              <div className="sm:w-[60%]">
-                <img
-                  src={warrior}
-                  className=" absolute hidden md:block sm: w-3/2 sm:-top-4 md:left-[3.5rem] sm:h-full md:w-[82%] "
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+
+          <img
+            src={yuvaan}
+            className="absolute top-[10%] left-0  sm:top-[8%] sm:left-[5vw] h-[25vw] sm:h-[14vw] "
+            alt="Title"
+          />
+
+          <img
+            src={dates}
+            className="absolute bottom-[42vh] sm:bottom-[20vh] left-[0vw]  sm:left-[25vw] h-[25vw] sm:h-[12vw]"
+            alt="dates"
+          />
+
+          <div className="sm:block hidden mt-4  sm:mt-0 sm:w-36 sm:h-36 rounded-full bg-white opacity-60 mix-blend-overlay absolute right-16 sm:right-10"></div>
         </section>
         {/* CLOUDS */}
         <Clouds />
         {/* Major Events */}
-        <AnimationEffect className="mt-32 relative w-full ">
+        <AnimationEffect className="mt-32 relative w-full z-40">
           <MajorEvent />
         </AnimationEffect>
 

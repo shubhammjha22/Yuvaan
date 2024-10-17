@@ -16,7 +16,7 @@ function SocialMedia() {
         rel="noopener noreferrer"
         className="z-30"
       >
-        <img src={instagramlogo} alt="Instagram" className="w-8 h-8" />
+        <img src={instagramlogo} alt="Instagram" className="" />
       </a>
       <a
         href="https://www.facebook.com/YuvaanDTU/"
@@ -24,7 +24,7 @@ function SocialMedia() {
         rel="noopener noreferrer"
         className="z-30"
       >
-        <img src={facebooklogo} alt="Facebook" className="w-8 h-8" />
+        <img src={facebooklogo} alt="Facebook" className="" />
       </a>
       <a
         href="https://www.youtube.com/@YuvaanDTU/featured"
@@ -32,7 +32,7 @@ function SocialMedia() {
         rel="noopener noreferrer"
         className="z-30"
       >
-        <img src={youtubelogo} alt="YouTube" className="w-8 h-8" />
+        <img src={youtubelogo} alt="YouTube" className="" />
       </a>
       <a
         href="https://in.linkedin.com/company/yuvaandtu"
@@ -40,7 +40,7 @@ function SocialMedia() {
         rel="noopener noreferrer"
         className="z-30"
       >
-        <img src={linkedinlogo} alt="LinkedIn" className="w-8 h-8" />
+        <img src={linkedinlogo} alt="LinkedIn" className="" />
       </a>
     </div>
   );
