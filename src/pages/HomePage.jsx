@@ -27,11 +27,13 @@ function HomePage() {
             src="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729146017/hero-tiny_neu6sl.png"
             alt="hero-section"
             className=" hidden  sm:block w-full h-full absolute -top-6 brightness-[120%]"
+            fetchpriority="high"
           />
           <img
             src="https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729148493/hero-phone-tiny_cdiidg.png"
             alt="hero-section"
             className="block sm:hidden w-full h-full absolute -top-8 "
+            fetchpriority="high"
           />
 
           <img
