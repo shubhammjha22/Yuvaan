@@ -1,16 +1,22 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// Pages
+import { lazy, Suspense } from "react";
+
+// Important and Coming Soon pages
 import RootLayout from "./pages/RootLayout";
-import HomePage from "./pages/HomePage";
-import EventsRoot from "./pages/EventsRoot";
-import Competition from "./pages/Competition";
-import ContantUs from "./pages/ContactUs";
-import AboutUs from "./pages/AboutUs";
-import Sponsors from "./pages/Sponsors";
-import Passes from "./pages/Passes";
-import Accommodations from "./pages/Accommodations";
 import ErrorPage from "./pages/ErrorPage";
 import ErrorBoundary from "./pages/ErrorBoundary";
+import Loader from "./components/loader";
+import EventsRoot from "./pages/EventsRoot";
+import Sponsors from "./pages/Sponsors";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+// const EventsRoot = lazy(() => import("./pages/EventsRoot"));
+const Competition = lazy(() => import("./pages/Competition"));
+const ContantUs = lazy(() => import("./pages/ContactUs"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+// const Sponsors = lazy(() => import("./pages/Sponsors"));
+const Passes = lazy(() => import("./pages/Passes"));
+const Accommodations = lazy(() => import("./pages/Accommodations"));
 
 const router = createBrowserRouter([
   {
@@ -20,7 +26,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <HomePage />
+          </Suspense>
+        ),
       },
       {
         path: "events",
@@ -28,15 +38,27 @@ const router = createBrowserRouter([
       },
       {
         path: "competitions",
-        element: <Competition />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Competition />
+          </Suspense>
+        ),
       },
       {
         path: "contact",
-        element: <ContantUs />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <ContantUs />
+          </Suspense>
+        ),
       },
       {
         path: "about",
-        element: <AboutUs />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <AboutUs />
+          </Suspense>
+        ),
       },
       {
         path: "sponsors",
@@ -44,11 +66,19 @@ const router = createBrowserRouter([
       },
       {
         path: "passes",
-        element: <Passes />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Passes />
+          </Suspense>
+        ),
       },
       {
         path: "accommodations",
-        element: <Accommodations />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Accommodations />
+          </Suspense>
+        ),
       },
       // Catch-all route for undefined paths
       {
