@@ -44,7 +44,7 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
       },
     ],
     focusOnSelect: true,
-
+    arrows: false,
     // beforeChange: (current, next) => setActiveImage(next),
     afterChange: (index) => setActiveImage(index),
   };
@@ -56,10 +56,18 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
     // sliderRef.current.slickGoTo(index); // Move slider to the clicked image
   };
 
+  const handlePrev = () => {
+    sliderRef.current.slickPrev(); // Move slider to previous slide
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext(); // Move slider to next slide
+  };
+
   return (
     <>
       <div className="relative w-[55%] -mt-12  mb-10 sm:-mt-0 sm:mb-0 sm:w-[90%]  mx-auto   sm:overflow-hidden">
-        <Slider className="sm:w-[95vw] " ref={sliderRef} {...settings}>
+        <Slider className="sm:w-[95vw]" ref={sliderRef} {...settings}>
           {images.map((img, index) => (
             <div className=" relative h-full w-full" key={index}>
               <img
@@ -73,6 +81,18 @@ export default function ImageSlider({ setActiveImage, activeImage }) {
             </div>
           ))}
         </Slider>
+      </div>
+      <div
+        onClick={handlePrev}
+        className="absolute h-8 w-8 sm:h-10 sm:w-10 left-[16vw] sm:left-[3vw] top-1/3 sm:top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-black bg-opacity-[20%] text-lg sm:text-2xl hover:cursor-pointer  px-1 rotate-90 flex justify-center items-center text-white opacity-60 hover:scale-105 hover:opacity-90"
+      >
+        V
+      </div>
+      <div
+        onClick={handleNext}
+        className="absolute h-8 w-8 sm:h-10 sm:w-10 right-[8vw]  sm:right-[1vw] top-1/3 sm:top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-black bg-opacity-[20%] text-lg sm:text-2xl hover:cursor-pointer  px-1 -rotate-90 flex justify-center items-center text-white opacity-60 hover:scale-105 hover:opacity-90"
+      >
+        V
       </div>
     </>
   );

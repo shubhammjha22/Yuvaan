@@ -194,10 +194,12 @@ export default function Competition() {
             activeImage={activeImage}
           />
 
-          <ImageSlider
-            setActiveImage={setActiveImage}
-            activeImage={activeImage}
-          />
+          <div className="relative">
+            <ImageSlider
+              setActiveImage={setActiveImage}
+              activeImage={activeImage}
+            />
+          </div>
         </section>
 
         <div className="bg-footer-gradient w-full h-1/4 absolute bottom-0 "></div>
