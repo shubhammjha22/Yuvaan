@@ -2,11 +2,8 @@ const logo =
   "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
 import { motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Import hamburger and close icons
-import { HiArrowLeft } from "react-icons/hi"; // Import back arrow icon
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State to track the mobile menu
@@ -60,16 +57,6 @@ function Navbar() {
           </NavLink>
         </div>
 
-        {/* Logo in the center with vertical movement */}
-        {/* <div
-          className="ml-4 lg:ml-0 relative"
-          style={{ transform: `translateY(${translateY}px)` }}
-        >
-          <NavLink to="/" className="z-20">
-            <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
-          </NavLink>
-        </div> */}
-
         {/* framer animation */}
         <motion.div
           animate={{
@@ -108,14 +95,7 @@ function Navbar() {
 
         {/* Hamburger Icon for mobile screens */}
         <div className="lg:hidden absolute top-4 right-4 text-white">
-          <button onClick={toggleMenu}>
-            {isOpen ? null : ( // <AiOutlineClose size={24} /> // Close icon when menu is open
-              <AiOutlineMenu
-                className="bg-[#191919] bg-opacity-40 p-2 w-10 h-10 rounded-xl "
-                size={24}
-              /> // Hamburger icon when menu is closed
-            )}
-          </button>
+          <button onClick={toggleMenu}>{isOpen ? null : <Hamburger />}</button>
         </div>
 
         {/* Full-screen overlay for mobile menu */}
@@ -127,7 +107,8 @@ function Navbar() {
           {/* Back arrow and navigation links */}
           <div className="p-6  bg-black bg-opacity-90 h-[100vh]">
             <button onClick={toggleMenu} className="text-white">
-              <HiArrowLeft size={24} /> {/* Back arrow icon */}
+              {/* <HiArrowLeft size={24} /> */}
+              <LeftArrow />
             </button>
             <div className="mt-10 space-y-6 text-white">
               <NavLink to="/" onClick={toggleMenu} className="block text-lg">
@@ -191,3 +172,37 @@ function Navbar() {
 }
 
 export default Navbar;
+
+const Hamburger = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="size-10 bg-[#191919] bg-opacity-40 rounded-xl p-2"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+    />
+  </svg>
+);
+
+const LeftArrow = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="size-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+    />
+  </svg>
+);
