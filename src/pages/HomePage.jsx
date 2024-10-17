@@ -56,7 +56,7 @@ function HomePage() {
         </AnimationEffect>
 
         {/* Layout */}
-        <AnimationEffect className="relative">
+        <AnimationEffect className="relative z-50">
           <Layout />
         </AnimationEffect>
 

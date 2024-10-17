@@ -4,8 +4,8 @@ const aftermovie =
 function Layout() {
   return (
     <>
-      <div className=" mt-10 lg:mt-0 flex flex-col justify-center items-center">
-        <div className="flex flex-col lg:flex-row justify-center items-center">
+      <div className=" mt-10 lg:mt-0 flex flex-col justify-center items-center z-40">
+        <div className="flex flex-col lg:flex-row justify-center items-center z-40">
           <div className="flex mt-24 w-[90vw]  sm:ml-0 lg:mt-0 flex-col lg:p-10 lg:ml-10 sm:w-[90%]  ">
             <h1 className="text-4xl sm:text-5xl -mt-[4rem]  sm:-mt-[10rem] text-[#CA9E57] font-abhaya font-bold  mb-0">
               ABOUT YUVAAN
@@ -34,7 +34,7 @@ function Layout() {
               </span>
             </p>
           </div>
-          <div className="img  w-full max-w-[600px] -mt-6 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
+          <div className="img z-50 w-full max-w-[600px] -mt-6 sm:w-[70%] sm:ml-[20rem] sm:-mt-24  lg:mt-0 lg:min-w-[490px] lg:-ml-[10rem] xl:ml-[1.25rem] ">
             <img
               src={aftermovie}
               onClick={() =>
@@ -44,7 +44,7 @@ function Layout() {
                   "noopener,noreferrer"
                 )
               }
-              className="z-10 cursor-pointer transition-all duration-300 ease-out hover:scale-105 "
+              className="z-30 cursor-pointer transition-all duration-300 ease-out hover:scale-105 "
               alt=""
             />
           </div>

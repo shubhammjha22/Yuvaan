@@ -11,7 +11,7 @@ const url2 =
 export default function Accommodations() {
   return (
     <>
-      <div className="h-screen w-screen bg-[#2A0B44]">
+      <div className="relative z-20 h-screen w-screen bg-[#2A0B44]">
         <style>{`
           .glow {
             text-shadow: 0 0 10px rgba(255, 204, 51, 0.7),

@@ -92,7 +92,7 @@ const data = [
 export default function Contacts() {
   return (
     <>
-      <div className="mt-24 sm:mt-16 flex flex-col justify-center  items-center">
+      <div className="mt-24 sm:mt-16 flex flex-col justify-center  items-center relative z-20">
         <h1 className="text-3xl sm:text-7xl opacity-70  text-white font-abhaya font-extrabold">
           COUNCIL MEMBERS 24-25
         </h1>
