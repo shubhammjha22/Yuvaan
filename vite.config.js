@@ -7,4 +7,15 @@ export default defineConfig({
   server: {
     host: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          "framer-motion": ["framer-motion"],
+        },
+      },
+    },
+    sourcemap: false, // Optional, only needed if you want to debug production
+  },
 });
