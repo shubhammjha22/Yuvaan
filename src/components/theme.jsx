@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
+import LazyMotionWrapper from "../util/LazyMotion";
 
 const realms =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753751/realms_y0wixi.png";
@@ -9,26 +10,31 @@ export default function Theme() {
       {/* Theme */}
       <div className="flex relative  -mt-[10rem]  sm:-mt-[15rem] gap-10 justify-center items-center">
         <div className="img w-[18rem] -mr-[20rem] sm:w-[50vw] sm:-mr-[15rem] relative flex ">
-          <motion.div
-            animate={{
-              translateY: [0, -8, 0], // Oscillating effect
-            }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
-            className="w-full h-full"
-            style={{ willChange: "transform" }}
-          >
-            <img
-              src={realms}
-              className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
-              alt=""
-              loading="lazy"
-            />
-          </motion.div>
+          <LazyMotionWrapper>
+            <m.div
+              whileInView={{
+                translateY: [0, -8, 0], // Oscillating effect
+              }}
+              transition={{
+                duration: 1.5,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-full h-full"
+              viewport={{ once: false, amount: 0.2 }} // Adjust viewport threshold
+              onViewportEnter={() => console.log("Entered the viewport!")} // Logs when enters the viewport
+              onViewportLeave={() => console.log("Left the viewport!")}
+              style={{ willChange: "transform" }}
+            >
+              <img
+                src={realms}
+                className="h-[18rem] z-10 right-[7.75rem]  sm:right-0 -mt-[10rem] sm:mt-0 absolute sm:relative sm:w-full sm:h-full  sm:mr-0"
+                alt=""
+                loading="lazy"
+              />
+            </m.div>
+          </LazyMotionWrapper>
         </div>
         <div className="flex flex-col p-10 -mr-24 sm:mr-10   ">
           <h2 className="text-base sm:text-2xl text-underline  mt-[4rem]  text-[#CA9E57] font-abhaya font-light opacity-70  mb-0">

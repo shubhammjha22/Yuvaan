@@ -1,9 +1,10 @@
 const logo =
   "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1729151591/yuvaan_logo-tiny_ij6r1a.webp";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import LazyMotionWrapper from "../util/LazyMotion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State to track the mobile menu
@@ -58,22 +59,28 @@ function Navbar() {
         </div>
 
         {/* framer animation */}
-        <motion.div
-          animate={{
-            translateY: [0, -8, 0], // Oscillating effect
-          }}
-          transition={{
-            duration: 1,
-            ease: "easeInOut",
-            repeat: Infinity,
-          }}
-          style={{ willChange: "transform", transform: "translateZ(0)" }}
-          className="ml-4 lg:ml-0 relative"
-        >
-          <NavLink to="/" className="z-20">
-            <img src={logo} alt="Logo" className="h-12 w-12 sm:h-16 sm:w-14" />
-          </NavLink>
-        </motion.div>
+        <LazyMotionWrapper>
+          <m.div
+            animate={{
+              translateY: [0, -8, 0], // Oscillating effect
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+            style={{ willChange: "transform", transform: "translateZ(0)" }}
+            className="ml-4 lg:ml-0 relative"
+          >
+            <NavLink to="/" className="z-20">
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-12 w-12 sm:h-16 sm:w-14"
+              />
+            </NavLink>
+          </m.div>
+        </LazyMotionWrapper>
 
         {/* Right-side links for large screens */}
         <div className="hidden lg:flex space-x-5">
