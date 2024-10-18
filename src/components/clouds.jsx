@@ -59,7 +59,7 @@ export default function Clouds() {
               alt=""
             />
             {/* Center cloud */}
-            <img src={clouds} className="absolute  w-[80%]" alt="" />
+            {/* <img src={clouds} className="absolute  w-[80%]" alt="" /> */}
 
             {/* <img src={clouds} className="absolute top-24  w-full" alt="" /> */}
             {/* <img src={clouds} className="absolute -top-14  w-full" alt="" /> */}
