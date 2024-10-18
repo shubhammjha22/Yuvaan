@@ -10,7 +10,7 @@ const containerVariants = {
       ease: "easeInOut", // Makes the animation smoother
       duration: 0.5, // Adjust the duration for the smoothness
 
-      //   staggerChildren: 0.2, // Delay between child elements for a staggered effect
+      staggerChildren: 0.2, // Delay between child elements for a staggered effect
     },
   },
 };
@@ -38,6 +38,7 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
         initial="hidden"
         animate="visible"
         key={activeImage}
+        style={{ willChange: "opacity, filter" }}
       >
         {/* <motion.img src={first_heading} className="h-32" alt="" /> */}
 

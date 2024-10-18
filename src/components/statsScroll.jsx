@@ -50,9 +50,11 @@ export default function StatsScroll() {
         animate={{
           opacity: index === index ? 1 : 0,
           y: index === index ? 0 : 10,
-        }} // Animate to visible and in place
-        // exit={{ opacity: 0, y: -20 }} // Exit by fading and moving upwards
+        }}
         transition={{ duration: 0.5 }} // Duration of each transition
+        style={{
+          willChange: "transform, opacity",
+        }}
         className="leading-tight h-20 z-20 text-sm sm:text-xl w-[17rem] sm:w-[46rem] text-white font-abhaya mt-4 mb-24 sm:mt-4 sm:font-lg"
       >
         {textContent[index]?.big ? (

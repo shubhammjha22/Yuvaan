@@ -67,6 +67,7 @@ function Navbar() {
             ease: "easeInOut",
             repeat: Infinity,
           }}
+          style={{ willChange: "transform", transform: "translateZ(0)" }}
           className="ml-4 lg:ml-0 relative"
         >
           <NavLink to="/" className="z-20">

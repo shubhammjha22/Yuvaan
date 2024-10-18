@@ -20,6 +20,7 @@ export default function Theme() {
               repeatType: "loop",
             }}
             className="w-full h-full"
+            style={{ willChange: "transform" }}
           >
             <img
               src={realms}

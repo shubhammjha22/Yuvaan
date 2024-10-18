@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 const passes_img2 =
   "https://res.cloudinary.com/derpoctie/image/upload/q_auto,f_auto/v1728632414/ENTRY_PASS_mobile_no_text-tiny_rmbzg9.png";
 
-const url = "https://docs.google.com/forms/u/0/d/14A2t436sqaSNw9YibwBpI7XTEssz7GE6MRLxu9LzTQM/edit?usp=sharing_eip_se_dm&ts=6707714a&pli=1";
+const url =
+  "https://docs.google.com/forms/u/0/d/14A2t436sqaSNw9YibwBpI7XTEssz7GE6MRLxu9LzTQM/edit?usp=sharing_eip_se_dm&ts=6707714a&pli=1";
 
 export default function PassesImg({ passes_img }) {
   const handleMouseMove = (e) => {
@@ -54,6 +55,7 @@ export default function PassesImg({ passes_img }) {
       style={{
         perspective: 1000,
         transition: "transform 0.2s ease",
+        willChange: "transform",
       }}
     >
       {/* Large screen */}

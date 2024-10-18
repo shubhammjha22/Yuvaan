@@ -16,6 +16,11 @@ function MajorEvent() {
             repeat: Infinity,
             repeatType: "loop",
           }}
+          style={{
+            willChange: "transform", // Not 'translateZ'
+            // transform: "translateZ(0)", // Force GPU acceleration
+            backfaceVisibility: "hidden", // Helps with rotation performance
+          }}
           className="w-full h-full"
         >
           <img

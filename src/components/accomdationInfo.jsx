@@ -23,6 +23,7 @@ export default function AccommodationInfo() {
         initial="hidden"
         animate="visible"
         className=" absolute  left-[13vw] top-[28vh] sm:left-[4vw] sm:top-[42vh] h-[20vh] sm:h-[26vh]  flex flex-col items-center justify-center w-[75vw] sm:w-[30vw] "
+        style={{ willChange: "opacity, filter" }}
       >
         <h1 className="text-xs sm:text-lg text-white font-heading">
           ACCOMMODATION FOR - 18TH, 19TH, 20TH
