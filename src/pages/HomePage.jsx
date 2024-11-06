@@ -2,7 +2,7 @@
 const yuvaan =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753759/yuvaan_eqrtys.png";
 const dates =
-  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1727753741/dates-1_kealsq.png";
+  "https://res.cloudinary.com/derpoctie/image/upload/f_auto/v1730879038/DATES_11_12_13_clcrzs.png";
 const warrior =
   "https://res.cloudinary.com/derpoctie/image/upload/f_auto,q_auto/v1727753741/char1_k1inyc.png";
 
@@ -54,7 +54,7 @@ function HomePage() {
 
           <img
             src={dates}
-            className="absolute bottom-[46vh] sm:bottom-[20vh] left-[8vw]  sm:left-[25vw] h-[22vw] sm:h-[12vw]"
+            className="absolute opacity-[85%] bottom-[38vh] sm:bottom-[12vh] left-[10vw]  sm:left-[25vw] h-[40vw] sm:h-[22vw]"
             alt="dates"
           />
 
