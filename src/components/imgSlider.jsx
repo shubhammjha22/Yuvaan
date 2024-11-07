@@ -3,22 +3,22 @@ import Slider from "react-slick";
 
 // Images from Cloudinary
 const images = [
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740731/Bayaan_r6ukit.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740730/REALMS_OF_IMAGINATION_n1faya.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740729/BASANTI_POUNCE_MAT_KARNA_zsxmqw.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740728/DELTECH_DEBATATHON_tyyecx.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740732/SOLO_FOLK_COMPETITION_ajrrm4.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740730/NAYAAB_tdt47q.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740728/DUET_AND_GROUP_CLASSICAL_COMPETITION_qb1vxs.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740728/CLASH_OF_COMICS_kk7dpw.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740728/CONSULTICA_CHALLENGE_ckyndg.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740730/LENS_LEGENDS_vk10bs.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740731/The_Muse_Matter_Hindi_jqbjyh.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740732/The_Muse_Matter_gxjnia.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740728/JUST_A_MINUTE_eifecf.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740729/BOOKMARK_MAKING_vhyxvl.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740730/PHOTO_EXHIBITION_k9l178.png",
-  "https://res.cloudinary.com/derpoctie/image/upload/v1730740729/16_hnozqb.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975584/Bayaan_upryro.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975581/REALMS_OF_IMAGINATION_xbekhf.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975582/BASANTI_POUNCE_MAT_KARNA_c7e18e.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975579/DELTECH_DEBATATHON_t0dbqb.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975580/SOLO_FOLK_COMPETITION_v2phrp.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975583/NAYAAB_mbzatn.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975579/DUET_AND_GROUP_CLASSICAL_COMPETITION_enhnxk.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975584/CLASH_OF_COMICS_mvjeca.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975579/CONSULTICA_CHALLENGE_mrgh4s.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975581/LENS_LEGENDS_zkurjk.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975584/The_Muse_Matter_Hindi_jay9o0.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975584/The_Muse_Matter_rb5bf1.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975580/JUST_A_MINUTE_cu2xas.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975579/BOOKMARK_MAKING_xwfnbv.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975581/PHOTO_EXHIBITION_orlcj8.png",
+  "https://res.cloudinary.com/derpoctie/image/upload/v1730975583/16_l2qtl6.png",
 ];
 
 export default function ImageSlider({ setActiveImage, activeImage }) {

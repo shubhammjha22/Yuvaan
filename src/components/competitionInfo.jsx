@@ -76,11 +76,11 @@ export default function CompetitionInfo({ backgroundImages, activeImage }) {
           <motion.li variants={childVariants}>
             Venue - {backgroundImages[activeImage].venue}
           </motion.li>
-          {backgroundImages[activeImage]?.cash != null && (
+          {/* {backgroundImages[activeImage]?.cash != null && (
             <motion.li variants={childVariants}>
               Cash Prize - {backgroundImages[activeImage].cash}
             </motion.li>
-          )}
+          )} */}
           <motion.li variants={childVariants}>
             Click 'Register' for further information
           </motion.li>
