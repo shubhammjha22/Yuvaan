@@ -63,12 +63,14 @@ function HomePage() {
         {/* CLOUDS */}
         <Clouds />
         {/* Major Events */}
-        <AnimationEffect className="mt-32 relative w-full z-40">
+        {/* <AnimationEffect className="mt-32 relative w-full z-40">
           <MajorEvent />
-        </AnimationEffect>
+        </AnimationEffect> */}
+
+        <div className="mb-[12rem]"></div>
 
         {/* Layout */}
-        <AnimationEffect className="relative z-50">
+        <AnimationEffect className="relative z-30">
           <Layout />
         </AnimationEffect>
 

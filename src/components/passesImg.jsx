@@ -78,7 +78,7 @@ export default function PassesImg({ passes_img }) {
       </div>
       <div className="absolute top-2 w-full  ">
         <h1 className="text-white text-center heading-shadow text-4xl sm:text-[55px] mt-6 font-heading text-shadow">
-          EARLY BIRD REGISTRATION
+          REGISTRATION
         </h1>
         <p className="text-white text-center text-3xl sm:text-4xl mt-1 -mb-2 font-montserrat">
           FOR
