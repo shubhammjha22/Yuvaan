@@ -7,7 +7,7 @@ export default function AccommodationHeading() {
 
         <div className="text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-8xl font-heading  text-[#FFBD59] glow">
-            ACCOMMODATIONAS
+            ACCOMMODATIONS
           </h1>
           <h3 className="hidden sm:block text-2xl sm:text-4xl -mt-2 font-heading  text-white">
             AT 7TH EDITION
