@@ -209,7 +209,7 @@ export default function SponsorsTitle() {
           {/* <h1 className="text-3xl sm:text-7xl text-center  text-[#CA9E57] font-abhaya font-bold">
             PRESIDENT
           </h1> */}
-          <div className=" w-full  flex flex-wrap justify-center gap-4 sm:gap-0 sm:flex-row sm:justify-between  sm:items-center">
+          <div className=" w-full  flex flex-wrap justify-center gap-10 sm:gap-0 sm:flex-row sm:justify-between  sm:items-center">
             <SponsorsCard {...sponsorData[0]} />
             <SponsorsCard {...sponsorData[1]} />
             <SponsorsCard {...sponsorData[2]} />
