@@ -211,8 +211,8 @@ export default function SponsorsTitle() {
           </h1> */}
           <div className=" w-full  flex flex-wrap justify-center gap-10 sm:gap-0 sm:flex-row sm:justify-between  sm:items-center">
             <SponsorsCard {...sponsorData[0]} />
-            <SponsorsCard {...sponsorData[1]} />
             <SponsorsCard {...sponsorData[2]} />
+            <SponsorsCard {...sponsorData[1]} />
           </div>
         </AnimationEffect>
 
@@ -223,6 +223,8 @@ export default function SponsorsTitle() {
             PRESIDENT
           </h1> */}
           <div className=" w-full flex flex-wrap justify-center gap-10 sm:gap-10  lg:justify-center  lg:items-center">
+            <SponsorsCard {...sponsorData[13]} />
+            <SponsorsCard {...sponsorData[11]} />
             <SponsorsCard {...sponsorData[3]} />
             <SponsorsCard {...sponsorData[4]} />
             <SponsorsCard {...sponsorData[5]} />
@@ -231,9 +233,9 @@ export default function SponsorsTitle() {
             <SponsorsCard {...sponsorData[8]} />
             <SponsorsCard {...sponsorData[9]} />
             <SponsorsCard {...sponsorData[10]} />
-            <SponsorsCard {...sponsorData[11]} />
+
             <SponsorsCard {...sponsorData[12]} />
-            <SponsorsCard {...sponsorData[13]} />
+
             <SponsorsCard {...sponsorData[14]} />
             <SponsorsCard {...sponsorData[15]} />
             <SponsorsCard {...sponsorData[16]} />
