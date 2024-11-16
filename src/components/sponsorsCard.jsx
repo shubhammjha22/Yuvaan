@@ -26,7 +26,7 @@ export default function SponsorsCard({ imgUrl, name }) {
           ref={imgRef}
           src={imgUrl}
           alt={name}
-          className="h-[11rem] w-[11rem] sm:h-[20rem] sm:w-[120%] relative"
+          className="h-[9rem] w-[9rem] sm:h-[20rem] sm:w-[120%] relative"
           loading="lazy"
         />
         {/* <div className="w-full text-[#CA9E57]  absolute -bottom-10 flex flex-col justify-center items-center">
